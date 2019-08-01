@@ -38,6 +38,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="4. 命令窗操作要旨" href="c1_4.html" />
     <link rel="prev" title="2. MATLAB桌面" href="c1_2.html" /> 
 </head>
 
@@ -101,6 +102,7 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="c1_4.html">4. 命令窗操作要旨</a></li>
 </ul>
 </li>
 </ul>
@@ -1177,7 +1179,30 @@ R =
 </div>
 <div class="section" id="面向数组设计的运算——MATLAB特点之二">
 <h3>3.3.6. 面向数组设计的运算——MATLAB特点之二<a class="headerlink" href="#面向数组设计的运算——MATLAB特点之二" title="永久链接至标题">¶</a></h3>
+<p>标量数据被看作(<span class="math notranslate nohighlight">\(1 \times 1\)</span>)的数组（Array）数据。</p>
+<p>所有的数据都被存放在适当大小的数组中。</p>
+<p>为加快计算速度（运算的向量化处理），MATLAB对以数组形式存储的数据设计了两种基本运算：</p>
+<ul class="simple">
+<li><p>数组运算</p></li>
+<li><p>矩阵运算</p></li>
+</ul>
 <p>【例1.3-7】实数数组<span class="math notranslate nohighlight">\(AR= \left[ \begin{array}{ll}{1} &amp; {3}  \ \ {2} &amp; {4} \end{array} \right]\)</span>的“一行”输入法。</p>
+<p>本例演示：二维数组的最基本、最常用输入法；二维数组输入的三大要素。</p>
+<p>（1）在键盘上输入下列内容</p>
+<p><code class="docutils literal notranslate"><span class="pre">AR=</span> <span class="pre">[1,3;2,4]</span></code></p>
+<ul>
+<li><p>在MATLAB中，不必事先对数组维数及大小做任何说明，内存将自动配置。</p></li>
+<li><p>二维数组输入的三大要素：</p>
+<ul class="simple">
+<li><p>数组标识符<code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">]</span></code>；</p></li>
+<li><p>元素分隔符为：空格或逗号<code class="docutils literal notranslate"><span class="pre">,</span></code>；</p></li>
+<li><p>数组行间分隔符 分号<code class="docutils literal notranslate"><span class="pre">;</span></code>或<code class="docutils literal notranslate"><span class="pre">回车键</span></code>。</p></li>
+</ul>
+<p>注意：所有标点符号都是“英文状态的符号”。</p>
+</li>
+<li><p>MATLAB对字母大小写是敏感的。比如本例中的数组赋给了变量AR，而不是 Ar, aR, 或ar 。</p></li>
+<li><p>在全部键入一个指令行内容后，必须按下 <code class="docutils literal notranslate"><span class="pre">[Enter]</span></code> 键，该指令才会被执行。</p></li>
+</ul>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
@@ -1282,7 +1307,8 @@ A_image =
 </pre></div>
 </div>
 <div class="input_area highlight-matlab notranslate"><div class="highlight"><pre>
-<span></span><span class="k">for</span> <span class="n">m</span><span class="p">=</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span>
+<span></span><span class="c">% 循环方法赋值，更加笨拙</span>
+<span class="k">for</span> <span class="n">m</span><span class="p">=</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span>
 <span class="k">for</span> <span class="n">n</span><span class="p">=</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span>
             <span class="n">Am1</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">)=</span><span class="nb">abs</span><span class="p">(</span><span class="n">A</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">));</span>
             <span class="n">Aa1</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">)=</span><span class="nb">angle</span><span class="p">(</span><span class="n">A</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">))</span><span class="o">*</span><span class="mi">180</span><span class="o">/</span><span class="nb">pi</span><span class="p">;</span>  <span class="c">%</span>
@@ -1316,7 +1342,8 @@ Aa1 =
 </pre></div>
 </div>
 <div class="input_area highlight-matlab notranslate"><div class="highlight"><pre>
-<span></span><span class="n">Am2</span><span class="p">=</span><span class="nb">abs</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span></span><span class="c">% 直接赋值</span>
+<span class="n">Am2</span><span class="p">=</span><span class="nb">abs</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 <span class="n">Aa2</span><span class="p">=</span><span class="nb">angle</span><span class="p">(</span><span class="n">A</span><span class="p">)</span><span class="o">*</span><span class="mi">180</span><span class="o">/</span><span class="nb">pi</span>
 </pre></div>
 </div>
@@ -1340,17 +1367,33 @@ Aa2 =
 
 </pre></div></div>
 </div>
-<p>【例1.3-10】画出衰减振荡曲线<span class="math notranslate nohighlight">\(y=e^{- \frac{1}{3}}  \sin 3 t\)</span>，<span class="math notranslate nohighlight">\(t\)</span>的取值范围是<span class="math notranslate nohighlight">\([0,4 \pi]\)</span>（配图1.3-4）</p>
+<ul class="simple">
+<li><p>函数<code class="docutils literal notranslate"><span class="pre">real,</span> <span class="pre">imag,</span> <span class="pre">abs,</span> <span class="pre">angle</span></code>是同时、并行地作用于数组的每个元素。对4个元素运算所需的时间大致与对单个元素所需时间相同。这有利于运算速度的提高。这是“<strong>向量化</strong>”运算的一种形式。</p></li>
+<li><p>本例给出了循环法求各元素模和幅角的指令。这是低效的计算方法。对于MATLAB以外的许多编程语言来说，可能不得不采用“<strong>循环</strong>”处理方式来解本例。 记住：对于MATLAB来说，应该尽量摒弃“<strong>循环</strong>”处理，而采用“<strong>向量化</strong>”处理方式。</p></li>
+</ul>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
 <div class="input_area highlight-matlab notranslate"><div class="highlight"><pre>
-<span></span><span class="n">t</span><span class="p">=</span><span class="mi">0</span><span class="p">:</span><span class="nb">pi</span><span class="o">/</span><span class="mi">50</span><span class="p">:</span><span class="mi">4</span><span class="o">*</span><span class="nb">pi</span><span class="p">;</span>                     <span class="c">%</span>
-<span class="n">y</span><span class="p">=</span><span class="nb">exp</span><span class="p">(</span><span class="o">-</span><span class="n">t</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span><span class="o">.*</span><span class="nb">sin</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">t</span><span class="p">);</span>      <span class="c">%</span>
-<span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="s">&#39;-r&#39;</span><span class="p">,</span><span class="s">&#39;LineWidth&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>                                <span class="c">%</span>
-<span class="n">axis</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="o">*</span><span class="nb">pi</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
-<span class="n">xlabel</span><span class="p">(</span><span class="s">&#39;t&#39;</span><span class="p">),</span><span class="n">ylabel</span><span class="p">(</span><span class="s">&#39;y&#39;</span><span class="p">)</span>
+<span></span><span class="n">format</span> <span class="n">short</span>
+
+<span class="n">A</span><span class="p">=</span><span class="nb">rand</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span><span class="mi">500</span><span class="p">);</span>
+<span class="n">tic</span>  <span class="c">%Start stopwatch time</span>
+<span class="n">A_real</span><span class="p">=</span><span class="nb">real</span><span class="p">(</span><span class="n">A</span><span class="p">);</span>
+<span class="n">A_image</span><span class="p">=</span><span class="nb">imag</span><span class="p">(</span><span class="n">A</span><span class="p">);</span>
+<span class="n">toc</span> <span class="c">%Read elapsed time from stopwatch</span>
+
+
+<span class="n">A</span><span class="p">=</span><span class="nb">rand</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span><span class="mi">500</span><span class="p">);</span>
+<span class="n">tic</span>
+<span class="k">for</span> <span class="n">m</span><span class="p">=</span><span class="mi">1</span><span class="p">:</span><span class="mi">500</span>
+<span class="k">for</span> <span class="n">n</span><span class="p">=</span><span class="mi">1</span><span class="p">:</span><span class="mi">500</span>
+            <span class="n">Am1</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">)=</span><span class="nb">abs</span><span class="p">(</span><span class="n">A</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">));</span>
+            <span class="n">Aa1</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">)=</span><span class="nb">angle</span><span class="p">(</span><span class="n">A</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">))</span><span class="o">*</span><span class="mi">180</span><span class="o">/</span><span class="nb">pi</span><span class="p">;</span>  <span class="c">%以度为单位计算幅角</span>
+    <span class="k">end</span>
+<span class="k">end</span>
+<span class="n">toc</span>
 </pre></div>
 </div>
 </div>
@@ -1358,10 +1401,86 @@ Aa2 =
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/ch1_c1_3_54_0.png" src="../_images/ch1_c1_3_54_0.png" />
+<div class="highlight"><pre>
+ʱ���ѹ� 0.000231 �롣
+ʱ���ѹ� 0.019791 �롣
+</pre></div></div>
+</div>
+<p>【例1.3-10】画出衰减振荡曲线<span class="math notranslate nohighlight">\(y=e^{- \frac{1}{3}}  \sin 3 t\)</span>，<span class="math notranslate nohighlight">\(t\)</span>的取值范围是<span class="math notranslate nohighlight">\([0,4 \pi]\)</span>（配图1.3-4）</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
+</pre></div>
+</div>
+<div class="input_area highlight-matlab notranslate"><div class="highlight"><pre>
+<span></span><span class="n">t</span><span class="p">=</span><span class="mi">0</span><span class="p">:</span><span class="nb">pi</span><span class="o">/</span><span class="mi">50</span><span class="p">:</span><span class="mi">4</span><span class="o">*</span><span class="nb">pi</span><span class="p">;</span>                     <span class="c">%定义自变量t的取值数组</span>
+<span class="n">y</span><span class="p">=</span><span class="nb">exp</span><span class="p">(</span><span class="o">-</span><span class="n">t</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span><span class="o">.*</span><span class="nb">sin</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">t</span><span class="p">);</span>              <span class="c">%计算与自变量相应的y数组。注意：乘法符前面的小黑点。</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="s">&#39;-r&#39;</span><span class="p">,</span><span class="s">&#39;LineWidth&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>       <span class="c">%绘制曲线</span>
+<span class="n">axis</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="o">*</span><span class="nb">pi</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]),</span><span class="n">xlabel</span><span class="p">(</span><span class="s">&#39;t&#39;</span><span class="p">),</span><span class="n">ylabel</span><span class="p">(</span><span class="s">&#39;y&#39;</span><span class="p">)</span>
+</pre></div>
 </div>
 </div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/ch1_c1_3_57_0.png" src="../_images/ch1_c1_3_57_0.png" />
+</div>
+</div>
+<ul class="simple">
+<li><p>本例第二条指令中的<code class="docutils literal notranslate"><span class="pre">.*</span></code>符号表示乘法是在两个数组相同位置上的元素间进行的。这种乘法称为“数组乘”。数组乘的引入，不但使得程序简洁自然，而且避免了耗费机时的“循环计算”。</p></li>
+<li><p>本例第二条指令是典型的“向量化”处理形式。</p></li>
+</ul>
 <p>【例1.3-11】复数矩阵<span class="math notranslate nohighlight">\(B= \left[ \begin{array}{ll}{3+2 i} &amp; {2+6 i}  \ \ {5+3 i} &amp; {4-2 i} \end{array} \right]\)</span>的生成，及计算<span class="math notranslate nohighlight">\(A cdot B\)</span>矩阵乘积（A取自算例1.3-9）。</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
+</pre></div>
+</div>
+<div class="input_area highlight-matlab notranslate"><div class="highlight"><pre>
+<span></span><span class="n">A</span><span class="p">=[</span><span class="mi">1</span><span class="o">-</span><span class="mi">5</span><span class="o">*</span><span class="nb">i</span><span class="p">,</span><span class="mi">3</span><span class="o">-</span><span class="mi">7</span><span class="o">*</span><span class="nb">i</span><span class="p">;</span><span class="mi">2</span><span class="o">-</span><span class="mi">6</span><span class="o">*</span><span class="nb">i</span><span class="p">,</span><span class="mi">4</span><span class="o">-</span><span class="mi">8</span><span class="o">*</span><span class="nb">i</span><span class="p">]</span>
+<span class="n">B</span><span class="p">=[</span><span class="mi">3</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="nb">i</span><span class="p">,</span><span class="mi">2</span><span class="o">+</span><span class="mi">6</span><span class="o">*</span><span class="nb">i</span><span class="p">;</span><span class="mi">5</span><span class="o">+</span><span class="mi">3</span><span class="o">*</span><span class="nb">i</span><span class="p">,</span><span class="mi">4</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="nb">i</span><span class="p">]</span> <span class="c">%复数数组的又一种输入方式</span>
+                                                            <span class="c">%注意标点符号的作用</span>
+<span class="n">C</span><span class="p">=</span><span class="n">A</span><span class="o">*</span><span class="n">B</span>                                                       <span class="c">%矩阵乘法</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+
+A =
+
+   1.0000 - 5.0000i   3.0000 - 7.0000i
+   2.0000 - 6.0000i   4.0000 - 8.0000i
+
+
+B =
+
+   3.0000 + 2.0000i   2.0000 + 6.0000i
+   5.0000 + 3.0000i   4.0000 - 2.0000i
+
+
+C =
+
+  49.0000 -39.0000i  30.0000 -38.0000i
+  62.0000 -42.0000i  40.0000 -40.0000i
+
+</pre></div></div>
+</div>
+<ul class="simple">
+<li><p>当数组被赋予“变换”属性时，数组就被称为矩阵。只有当两个矩阵的“内维大小相等”时，矩阵乘法才能进行。本例中，矩阵A的列数与矩阵B的行数相等，所以可以进行A乘B。</p></li>
+<li><p>从表达方式看，“矩阵相乘”的指令格式与“标量相乘”指令格式一样。矩阵运算如同标准“线性代数”那样简洁易读、自然流畅。</p></li>
+</ul>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-matlab notranslate"><div class="highlight"><pre>
+<span></span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1373,6 +1492,8 @@ Aa2 =
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="c1_4.html" class="btn btn-neutral float-right" title="4. 命令窗操作要旨" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="c1_2.html" class="btn btn-neutral float-left" title="2. MATLAB桌面" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
