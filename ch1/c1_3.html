@@ -84,7 +84,7 @@
             
               <p class="caption"><span class="caption-text">课件和讲义</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">基础准备及入门</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">1. 基础准备及入门</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="c1_1.html">1. MATLAB的安装和工具包选择</a></li>
 <li class="toctree-l2"><a class="reference internal" href="c1_2.html">2. MATLAB桌面</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">3. 指令窗运行入门</a><ul>
@@ -148,7 +148,7 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="index.html">基础准备及入门</a> &raquo;</li>
+          <li><a href="index.html">1. 基础准备及入门</a> &raquo;</li>
         
       <li>3. 指令窗运行入门</li>
     
@@ -893,14 +893,14 @@ ans =
 
 ans =
 
-  13.000000000000009  -5.000000000000004
-   3.000000000000000  -0.000000000000000
+   13.0000   -5.0000
+    3.0000   -0.0000
 
 
 ans =
 
-  11.000000000000009  -1.000000000000001
-  -7.000000000000006   2.000000000000000
+   11.0000   -1.0000
+   -7.0000    2.0000
 
 </pre></div></div>
 </div>
@@ -936,7 +936,7 @@ ans =
 
 z1 =
 
-  4.000000000000000 + 3.000000000000000i
+   4.0000 + 3.0000i
 
 </pre></div></div>
 </div>
@@ -959,17 +959,17 @@ z1 =
 
 z2 =
 
-  1.000000000000000 + 2.000000000000000i
+   1.0000 + 2.0000i
 
 
 z3 =
 
-  1.732050807568877 + 1.000000000000000i
+   1.7321 + 1.0000i
 
 
 z =
 
-  1.883974596215561 + 5.263139720814412i
+   1.8840 + 5.2631i
 
 </pre></div></div>
 </div>
@@ -994,27 +994,27 @@ z =
 
 real_z =
 
-   1.883974596215561
+    1.8840
 
 
 image_z =
 
-   5.263139720814412
+    5.2631
 
 
 magnitude_z =
 
-   5.590169943749474
+    5.5902
 
 
 angle_z_radian =
 
-   1.227051050989076
+    1.2271
 
 
 angle_z_degree =
 
-  70.304846468766030
+   70.3048
 
 </pre></div></div>
 </div>
@@ -1045,7 +1045,7 @@ angle_z_degree =
 
 z12 =
 
-  5.000000000000000 + 5.000000000000000i
+   5.0000 + 5.0000i
 
 </pre></div></div>
 </div>
@@ -1098,7 +1098,7 @@ z12 =
 
 r_a =
 
-  1.000000000000000 + 1.732050807568877i
+   1.0000 + 1.7321i
 
 </pre></div></div>
 </div>
@@ -1142,9 +1142,9 @@ r_n =
 
 R =
 
- -2.000000000000000 + 0.000000000000000i
-  1.000000000000000 + 1.732050807568877i
-  1.000000000000000 - 1.732050807568877i
+  -2.0000 + 0.0000i
+   1.0000 + 1.7321i
+   1.0000 - 1.7321i
 
 </pre></div></div>
 </div>
@@ -1230,8 +1230,8 @@ AI =
 </pre></div>
 </div>
 <div class="input_area highlight-matlab notranslate"><div class="highlight"><pre>
-<span></span><span class="n">AR</span><span class="p">=[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">;</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">];</span><span class="n">AI</span><span class="p">=[</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">;</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">];</span>  <span class="c">%</span>
-<span class="n">A</span><span class="p">=</span><span class="n">AR</span><span class="o">-</span><span class="n">AI</span><span class="o">*</span><span class="nb">i</span>                                           <span class="c">%</span>
+<span></span><span class="n">AR</span><span class="p">=[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">;</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">];</span><span class="n">AI</span><span class="p">=[</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">;</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">];</span>
+<span class="n">A</span><span class="p">=</span><span class="n">AR</span><span class="o">-</span><span class="n">AI</span><span class="o">*</span><span class="nb">i</span>
 </pre></div>
 </div>
 </div>
@@ -1243,15 +1243,8 @@ AI =
 
 A =
 
-  1 ��
-
-  1.000000000000000 - 5.000000000000000i
-  2.000000000000000 - 6.000000000000000i
-
-  2 ��
-
-  3.000000000000000 - 7.000000000000000i
-  4.000000000000000 - 8.000000000000000i
+   1.0000 - 5.0000i   3.0000 - 7.0000i
+   2.0000 - 6.0000i   4.0000 - 8.0000i
 
 </pre></div></div>
 </div>
@@ -1307,14 +1300,14 @@ A_image =
 
 Am1 =
 
-   5.099019513592784   7.615773105863909
-   6.324555320336759   8.944271909999159
+    5.0990    7.6158
+    6.3246    8.9443
 
 
 Aa1 =
 
- -78.690067525979785 -66.801409486351815
- -71.565051177077990 -63.434948822922010
+  -78.6901  -66.8014
+  -71.5651  -63.4349
 
 </pre></div></div>
 </div>
@@ -1336,14 +1329,14 @@ Aa1 =
 
 Am2 =
 
-   5.099019513592784   7.615773105863909
-   6.324555320336759   8.944271909999159
+    5.0990    7.6158
+    6.3246    8.9443
 
 
 Aa2 =
 
- -78.690067525979785 -66.801409486351815
- -71.565051177077990 -63.434948822922010
+  -78.6901  -66.8014
+  -71.5651  -63.4349
 
 </pre></div></div>
 </div>
