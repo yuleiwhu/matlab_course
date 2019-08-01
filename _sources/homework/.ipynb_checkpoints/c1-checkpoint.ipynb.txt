@@ -1,0 +1,173 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 第一章课后习题"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "1. 请指出如下5个变量名中，哪些是合法的？\n",
+    "\n",
+    "\t`abcd-2\txyz\u001f_3\t3chan\ta变量\tABCDefgh`"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "2. 在指令窗中，运行指令a=sqrt(2)。然后请回答以下问题：计算结果a是精准的$\\\\sqrt{2}$吗？该计算结果只是5位有效数字精度的$\\\\sqrt{2}$近似吗？请在指令窗中，显示出具有最多位有效数字的$\\\\sqrt{2}$近似值？再请恢复MATLAB数值结果显示的默认设置。\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " \n",
+      "ans =\n",
+      " \n",
+      "1.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753\n",
+      " \n",
+      " \n",
+      "ans =\n",
+      " \n",
+      "-0.00000000000000000000000000000000000000000000000000000000002353236187028555535453973625734589094060704280108087607709780499199889486810214543606320779859021763\n",
+      " \n"
+     ]
+    }
+   ],
+   "source": [
+    "vpa(sqrt(2),90)\n",
+    "vpa(sqrt(2)-vpa(sqrt(2),50),100)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "3. 设 a = -8 , 运行以下三条指令，问运行结果相同吗？为什么？\n",
+    "\n",
+    "```matlab\n",
+    "w1=a^(2/3)\t\t\n",
+    "w2=(a^2)^(1/3)\t\n",
+    "w3=(a^(1/3))^2\t\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "a =\n",
+      "\n",
+      "    -8\n",
+      "\n",
+      "\n",
+      "w1 =\n",
+      "\n",
+      "  -2.0000 + 3.4641i\n",
+      "\n",
+      "\n",
+      "w2 =\n",
+      "\n",
+      "    4.0000\n",
+      "\n",
+      "\n",
+      "w3 =\n",
+      "\n",
+      "  -2.0000 + 3.4641i\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = -8\n",
+    "w1=a^(2/3)     \n",
+    "w2=(a^2)^(1/3)    \n",
+    "w3=(a^(1/3))^2 "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "4. 指令clear, clf, clc各有什么用处？"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "5.想要在MATLAB中产生二维数组$S=\\\\left[\\\\begin{array}{lll}{1} & {2} & {3} \\\\\\\\ {4} & {5} & {6} \\\\\\\\ {7} & {8} & {9}\\\\end{array}\\\\right]$，下面哪些指令能实现目的？\n",
+    "\n",
+    "```matlab\n",
+    "S=[1,2,3;4,5,6;7,8;9]\n",
+    "S=[1  2  3;4  5  6;7  8  9]\n",
+    "S=[1，2，3；4，5，6；7，8，9]      \t%整个指令在中文状态下输入\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Matlab",
+   "language": "matlab",
+   "name": "matlab"
+  },
+  "language_info": {
+   "codemirror_mode": "octave",
+   "file_extension": ".m",
+   "help_links": [
+    {
+     "text": "MetaKernel Magics",
+     "url": "https://metakernel.readthedocs.io/en/latest/source/README.html"
+    }
+   ],
+   "mimetype": "text/x-octave",
+   "name": "matlab",
+   "version": "0.16.7"
+  },
+  "latex_envs": {
+   "LaTeX_envs_menu_present": true,
+   "autoclose": true,
+   "autocomplete": true,
+   "bibliofile": "biblio.bib",
+   "cite_by": "apalike",
+   "current_citInitial": 1,
+   "eqLabelWithNumbers": true,
+   "eqNumInitial": 1,
+   "hotkeys": {
+    "equation": "Ctrl-E",
+    "itemize": "Ctrl-I"
+   },
+   "labels_anchors": false,
+   "latex_user_defs": false,
+   "report_style_numbering": true,
+   "user_envs_cfg": false
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
