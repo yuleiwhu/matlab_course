@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>1. 基础准备及入门 &mdash; Matlab课程  文档</title>
+  <title>基础准备及入门 &mdash; Matlab课程  文档</title>
   
 
   
@@ -25,6 +25,7 @@
         <script type="text/javascript" src="../_static/underscore.js"></script>
         <script type="text/javascript" src="../_static/doctools.js"></script>
         <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/proof.js"></script>
         <script type="text/javascript" src="../_static/translations.js"></script>
         <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
         <script type="text/x-mathjax-config">MathJax.Hub.Config({"extensions": ["tex2jax.js"], "jax": ["input/TeX", "output/HTML-CSS"], "tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "displayMath": [["$$", "$$"], ["\\[", "\\]"]], "processEscapes": true}, "HTML-CSS": {"fonts": ["TeX"]}, "TeX": {"equationNumbers": {"autoNumber": "AMS", "useLabelIds": true}}})</script>
@@ -36,10 +37,11 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/proof.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="1.1. MATLAB的安装和工具包选择" href="c1_1.html" />
-    <link rel="prev" title="欢迎进入《Matlab基础》课程网页！" href="../index.html" /> 
+    <link rel="next" title="1. MATLAB的安装和工具包选择" href="c1_1.html" />
+    <link rel="prev" title="1. MATLAB 介绍" href="../intro_matlab.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -85,20 +87,28 @@
             
               <p class="caption"><span class="caption-text">课件和讲义</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">1. 基础准备及入门</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="c1_1.html">1.1. MATLAB的安装和工具包选择</a></li>
-<li class="toctree-l2"><a class="reference internal" href="c1_2.html">1.2. MATLAB桌面</a></li>
-<li class="toctree-l2"><a class="reference internal" href="c1_3.html">1.3. 指令窗运行入门</a></li>
-<li class="toctree-l2"><a class="reference internal" href="c1_4.html">1.4. 命令窗操作要旨</a></li>
-<li class="toctree-l2"><a class="reference internal" href="c1_5.html">1.5. 当前文件夹、路径设置器和文件管理</a></li>
-<li class="toctree-l2"><a class="reference internal" href="c1_6.html">1.6. 工作内存区和历史指令窗</a></li>
-<li class="toctree-l2"><a class="reference internal" href="c1_7.html">1.7. 帮助系统及其使用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro_matlab.html">1. MATLAB 介绍</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">基础准备及入门</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="c1_1.html">1. MATLAB的安装和工具包选择</a></li>
+<li class="toctree-l2"><a class="reference internal" href="c1_2.html">2. MATLAB桌面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="c1_3.html">3. 指令窗运行入门</a></li>
+<li class="toctree-l2"><a class="reference internal" href="c1_4.html">4. 命令窗操作要旨</a></li>
+<li class="toctree-l2"><a class="reference internal" href="c1_5.html">5. 当前文件夹、路径设置器和文件管理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="c1_6.html">6. 工作内存区和历史指令窗</a></li>
+<li class="toctree-l2"><a class="reference internal" href="c1_7.html">7. 帮助系统及其使用</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../quick_start.html">2. 快速入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../test.html">3. The reStructuredText Cheat Sheet: Syntax Reminders</a></li>
 </ul>
 <p class="caption"><span class="caption-text">课后作业</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../homework/c1.html">第一章课后习题</a></li>
+</ul>
+<p class="caption"><span class="caption-text">网站相关:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../templates/samples.html">示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../templates/matlab_kernel.html">Matlab in Jupyter Notebooks</a></li>
 </ul>
 
             
@@ -144,7 +154,7 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>1. 基础准备及入门</li>
+      <li>基础准备及入门</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -188,46 +198,46 @@
 }
 </style>
 <div class="section" id="id1">
-<h1>1. 基础准备及入门<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<h1>基础准备及入门<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
 <p>本章有三个目的：一是讲述MATLAB正常运行所必须具备的基础条件；
 二是简明地介绍MATLAB及其操作桌面Desktop的基本使用方法；
 三是全面介绍MATLAB的帮助系统。</p>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">内容:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="c1_1.html">1.1. MATLAB的安装和工具包选择</a></li>
-<li class="toctree-l1"><a class="reference internal" href="c1_2.html">1.2. MATLAB桌面</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="c1_2.html#MATLAB桌面的启动">1.2.1. MATLAB桌面的启动</a></li>
-<li class="toctree-l2"><a class="reference internal" href="c1_2.html#操作桌面简介">1.2.2. 操作桌面简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c1_1.html">1. MATLAB的安装和工具包选择</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c1_2.html">2. MATLAB桌面</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="c1_2.html#MATLAB桌面的启动">2.1. MATLAB桌面的启动</a></li>
+<li class="toctree-l2"><a class="reference internal" href="c1_2.html#操作桌面简介">2.2. 操作桌面简介</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="c1_3.html">1.3. 指令窗运行入门</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="c1_3.html#指令窗简介">1.3.1. 指令窗简介</a></li>
-<li class="toctree-l2"><a class="reference internal" href="c1_3.html#最简单的计算器使用法">1.3.2. 最简单的计算器使用法</a></li>
-<li class="toctree-l2"><a class="reference internal" href="c1_3.html#数值、变量和表达式">1.3.3. 数值、变量和表达式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c1_3.html">3. 指令窗运行入门</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="c1_3.html#指令窗简介">3.1. 指令窗简介</a></li>
+<li class="toctree-l2"><a class="reference internal" href="c1_3.html#最简单的计算器使用法">3.2. 最简单的计算器使用法</a></li>
+<li class="toctree-l2"><a class="reference internal" href="c1_3.html#数值、变量和表达式">3.3. 数值、变量和表达式</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="c1_4.html">1.4. 命令窗操作要旨</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="c1_4.html#指令窗的显示方式">1.4.1. 指令窗的显示方式</a></li>
-<li class="toctree-l2"><a class="reference internal" href="c1_4.html#指令行中的标点符号">1.4.2. 指令行中的标点符号</a></li>
-<li class="toctree-l2"><a class="reference internal" href="c1_4.html#指令窗的常用控制指令">1.4.3. 指令窗的常用控制指令</a></li>
-<li class="toctree-l2"><a class="reference internal" href="c1_4.html#指令窗中指令行的编辑">1.4.4. 指令窗中指令行的编辑</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c1_4.html">4. 命令窗操作要旨</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="c1_4.html#指令窗的显示方式">4.1. 指令窗的显示方式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="c1_4.html#指令行中的标点符号">4.2. 指令行中的标点符号</a></li>
+<li class="toctree-l2"><a class="reference internal" href="c1_4.html#指令窗的常用控制指令">4.3. 指令窗的常用控制指令</a></li>
+<li class="toctree-l2"><a class="reference internal" href="c1_4.html#指令窗中指令行的编辑">4.4. 指令窗中指令行的编辑</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="c1_5.html">1.5. 当前文件夹、路径设置器和文件管理</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="c1_5.html#当前文件夹及其使用">1.5.1. 当前文件夹及其使用</a></li>
-<li class="toctree-l2"><a class="reference internal" href="c1_5.html#MATLAB的搜索路径">1.5.2. MATLAB的搜索路径</a></li>
-<li class="toctree-l2"><a class="reference internal" href="c1_5.html#MATLAB搜索路径的扩展">1.5.3. MATLAB搜索路径的扩展</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c1_5.html">5. 当前文件夹、路径设置器和文件管理</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="c1_5.html#当前文件夹及其使用">5.1. 当前文件夹及其使用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="c1_5.html#MATLAB的搜索路径">5.2. MATLAB的搜索路径</a></li>
+<li class="toctree-l2"><a class="reference internal" href="c1_5.html#MATLAB搜索路径的扩展">5.3. MATLAB搜索路径的扩展</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="c1_6.html">1.6. 工作内存区和历史指令窗</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="c1_6.html#工作内存区、交互绘图和变量编辑器">1.6.1. 工作内存区、交互绘图和变量编辑器</a></li>
-<li class="toctree-l2"><a class="reference internal" href="c1_6.html#历史命令窗和M文件编辑器">1.6.2. 历史命令窗和M文件编辑器</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c1_6.html">6. 工作内存区和历史指令窗</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="c1_6.html#工作内存区、交互绘图和变量编辑器">6.1. 工作内存区、交互绘图和变量编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="c1_6.html#历史命令窗和M文件编辑器">6.2. 历史命令窗和M文件编辑器</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="c1_7.html">1.7. 帮助系统及其使用</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="c1_7.html#浏览器帮助系统">1.7.1. 浏览器帮助系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="c1_7.html#命令窗口帮助系统">1.7.2. 命令窗口帮助系统</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c1_7.html">7. 帮助系统及其使用</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="c1_7.html#浏览器帮助系统">7.1. 浏览器帮助系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="c1_7.html#命令窗口帮助系统">7.2. 命令窗口帮助系统</a></li>
 </ul>
 </li>
 </ul>
@@ -242,10 +252,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="c1_1.html" class="btn btn-neutral float-right" title="1.1. MATLAB的安装和工具包选择" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="c1_1.html" class="btn btn-neutral float-right" title="1. MATLAB的安装和工具包选择" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../index.html" class="btn btn-neutral float-left" title="欢迎进入《Matlab基础》课程网页！" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../intro_matlab.html" class="btn btn-neutral float-left" title="1. MATLAB 介绍" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

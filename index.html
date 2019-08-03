@@ -25,6 +25,7 @@
         <script type="text/javascript" src="_static/underscore.js"></script>
         <script type="text/javascript" src="_static/doctools.js"></script>
         <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/proof.js"></script>
         <script type="text/javascript" src="_static/translations.js"></script>
         <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
         <script type="text/x-mathjax-config">MathJax.Hub.Config({"extensions": ["tex2jax.js"], "jax": ["input/TeX", "output/HTML-CSS"], "tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "displayMath": [["$$", "$$"], ["\\[", "\\]"]], "processEscapes": true}, "HTML-CSS": {"fonts": ["TeX"]}, "TeX": {"equationNumbers": {"autoNumber": "AMS", "useLabelIds": true}}})</script>
@@ -36,9 +37,10 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/proof.css" type="text/css" />
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
-    <link rel="next" title="1. 基础准备及入门" href="ch1/index.html" /> 
+    <link rel="next" title="1. MATLAB 介绍" href="intro_matlab.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -84,11 +86,19 @@
             
               <p class="caption"><span class="caption-text">课件和讲义</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="ch1/index.html">1. 基础准备及入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro_matlab.html">1. MATLAB 介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch1/index.html">基础准备及入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">2. 快速入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="test.html">3. The reStructuredText Cheat Sheet: Syntax Reminders</a></li>
 </ul>
 <p class="caption"><span class="caption-text">课后作业</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="homework/c1.html">第一章课后习题</a></li>
+</ul>
+<p class="caption"><span class="caption-text">网站相关:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="templates/samples.html">示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="templates/matlab_kernel.html">Matlab in Jupyter Notebooks</a></li>
 </ul>
 
             
@@ -179,48 +189,92 @@
 </style>
 <div class="section" id="matlab">
 <h1>欢迎进入《Matlab基础》课程网页！<a class="headerlink" href="#matlab" title="永久链接至标题">¶</a></h1>
-<p><strong>课程名称</strong>：Matlab基础</p>
-<p><strong>授课老师</strong>：余磊~副教授，(<a class="reference external" href="mailto:ly&#46;wd&#37;&#52;&#48;whu&#46;edu&#46;cn">ly<span>&#46;</span>wd<span>&#64;</span>whu<span>&#46;</span>edu<span>&#46;</span>cn</a>)</p>
-<p><strong>助教</strong>：</p>
-<p><strong>课程时间</strong>：</p>
-<p><strong>课程地点</strong>：</p>
-<p><strong>教材</strong>：《MATLAB教程》R2014a（2015年修订）  2015年印刷,张志涌等编著，北京航空航天大学出版社</p>
-<p>本课程网站是武汉大学2019年秋季《Matlab基础》课程网站。本课程网站基于****教材。</p>
-<div class="section" id="id1">
-<h2>课程目的<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<dl class="field-list simple">
+<dt class="field-odd">课程名称</dt>
+<dd class="field-odd"><p>Matlab 基础</p>
+</dd>
+<dt class="field-even">授课老师</dt>
+<dd class="field-even"><p>余磊~副教授，(<a class="reference external" href="mailto:ly&#46;wd&#37;&#52;&#48;whu&#46;edu&#46;cn">ly<span>&#46;</span>wd<span>&#64;</span>whu<span>&#46;</span>edu<span>&#46;</span>cn</a>)</p>
+</dd>
+<dt class="field-odd">助教</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">课程时间</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">课程地点</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">教材</dt>
+<dd class="field-even"><p>《MATLAB教程》R2014a（2015年修订）  2015年印刷,张志涌等编著，北京航空航天大学出版社</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>本课程网站是武汉大学2019年秋季《Matlab基础》课程网站。本课程网站基于****教材 <a class="reference internal" href="#cit" id="id1"><span>[cit]</span></a>。</p>
+</div>
+<dl class="citation">
+<dt class="label" id="cit"><span class="brackets"><a class="fn-backref" href="#id1">cit</a></span></dt>
+<dd><p>A citation</p>
+</dd>
+</dl>
+<div class="section" id="id2">
+<h2>课程目的<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
 <li><p>掌握用计算机建模、计算，以及用图表形象表达分析结果从而促进逻辑思维的系统方法。</p></li>
 <li><p>缩短研究周期，加快探索步伐，激发创作灵感。</p></li>
 <li><p>不希望学生在编程上化太多时间，课程目的不是学习编程。</p></li>
 <li><p>紧密结合科学的前沿。</p></li>
-<li><p>论文=Matlab+word 。</p></li>
 </ul>
 </div>
-<div class="section" id="id2">
-<h2>MATLAB的特点<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id3">
+<h2>MATLAB的特点<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
-<li><p>编写程序犹如在演算纸上排列出公式与求解问题。</p></li>
-<li><p>语法非常简单，编程效率高，易学易懂，方便实用。没有编程基础的学生也可以很快地编写出程序。</p></li>
-<li><p>可以直接在Word中被调用，使用相当方便实用。</p></li>
-<li><p>强大的科学计算能力、卓越的可视化功能、开放式可扩展环境。不同的应用学科、几十种应用工具箱</p>
-<ul>
-<li><p>研究人员可以直观、方便地进行分析、计算和设计工作，</p></li>
-<li><p>应用工具箱可以更进一步简化编程，甚至给很复杂的问题提供“傻瓜照相式”的解决办法，极大地提高了工作效率。</p></li>
-</ul>
-</li>
-<li><p>可实现MATLAB与Visual C++等通用编程平台的混合编程。取长补短，以提高程序的运行效率，丰富程序开发的手段。</p></li>
+<li><p>用于科学和工程计算的高级语言；</p></li>
+<li><p>为迭代开发、设计和解决问题而优化的桌面环境；</p></li>
+<li><p>用于可视化数据的图形和用于创建自定义图表的工具；</p></li>
+<li><p>用于曲线配合、数据分类、信号分析、控制系统调优等任务的应用；</p></li>
+<li><p>为广泛的工程和科学应用程序而附加的工具箱；</p></li>
+<li><p>用于构建具有自定义用户接口的应用程序的工具；</p></li>
+<li><p>用于 C/ C++、Java®、.NET、Python、SQL、Hadoop 和 Microsoft® Excel® 的接口；</p></li>
+<li><p>可选择免版税部署的方式与最终用户共享 MATLAB 程序。</p></li>
 </ul>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">课件和讲义</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="ch1/index.html">1. 基础准备及入门</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="ch1/c1_1.html">1.1. MATLAB的安装和工具包选择</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch1/c1_2.html">1.2. MATLAB桌面</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch1/c1_3.html">1.3. 指令窗运行入门</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch1/c1_4.html">1.4. 命令窗操作要旨</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch1/c1_5.html">1.5. 当前文件夹、路径设置器和文件管理</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch1/c1_6.html">1.6. 工作内存区和历史指令窗</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch1/c1_7.html">1.7. 帮助系统及其使用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro_matlab.html">1. MATLAB 介绍</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro_matlab.html#id1">1.1. 认识MATLAB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro_matlab.html#id2">1.2. 利用MATLAB计算数学</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro_matlab.html#id3">1.3. MATLAB有什么特点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro_matlab.html#id4">1.4. MATLAB的用途</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro_matlab.html#id5">1.5. 一个简单的MATLAB例子</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ch1/index.html">基础准备及入门</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch1/c1_1.html">1. MATLAB的安装和工具包选择</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch1/c1_2.html">2. MATLAB桌面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch1/c1_3.html">3. 指令窗运行入门</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch1/c1_4.html">4. 命令窗操作要旨</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch1/c1_5.html">5. 当前文件夹、路径设置器和文件管理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch1/c1_6.html">6. 工作内存区和历史指令窗</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch1/c1_7.html">7. 帮助系统及其使用</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">2. 快速入门</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="quick_start.html#MATLAB-产品描述">2.1. MATLAB 产品描述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quick_start.html#MATLAB-界面基础知识">2.2. MATLAB 界面基础知识</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quick_start.html#矩阵与数组">2.3. 矩阵与数组</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quick_start.html#数组的索引">2.4. 数组的索引</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quick_start.html#工作空间变量">2.5. 工作空间变量</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quick_start.html#文本和字符串">2.6. 文本和字符串</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quick_start.html#二维图和三维图">2.7. 二维图和三维图</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quick_start.html#程序脚本">2.8. 程序脚本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quick_start.html#帮助和说明">2.9. 帮助和说明</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="test.html">3. The reStructuredText Cheat Sheet: Syntax Reminders</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="test.html#section-structure">3.1. Section Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test.html#body-elements">3.2. Body Elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test.html#inline-markup">3.3. Inline Markup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test.html#directive-quick-reference">3.4. Directive Quick Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test.html#interpreted-text-role-quick-reference">3.5. Interpreted Text Role Quick Reference</a></li>
 </ul>
 </li>
 </ul>
@@ -231,21 +285,17 @@
 <li class="toctree-l1"><a class="reference internal" href="homework/c1.html">第一章课后习题</a></li>
 </ul>
 </div>
-</div>
-<div class="section" id="matlab-in-jupyter-notebooks">
-<h2>Matlab in Jupyter Notebooks<a class="headerlink" href="#matlab-in-jupyter-notebooks" title="永久链接至标题">¶</a></h2>
-<p>This course is taught in MATLAB. One thing you could try is to run MATLAB codes in Jupyter Notebooks. Jupyter Notebook is a must-learn tool for data scientists, and it is also becoming popular in the traditional scientific computing community. It is a great tool for interactive computing and allows you to combine codes, simulation results, and descriptions such as latex equations in a single file.</p>
-<p>See how to install and use it at:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://am111.readthedocs.io/en/latest/jmatlab_install.html">Install Jupyter-MATLAB</a></p></li>
-<li><p><a class="reference external" href="https://am111.readthedocs.io/en/latest/jmatlab_use.html">Use MATLAB in Jupyter Notebooks</a></p></li>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">网站相关:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="templates/samples.html">示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="templates/matlab_kernel.html">Matlab in Jupyter Notebooks</a></li>
 </ul>
-<p>Some basic understanding of Linux command line and Python will be useful for installation. If you are just new to programming, you should simply use MATLAB’s original, basic user interface and come back to this tutorial later when you are interested.</p>
-<p>If you feel good about this tool, you can choose to submit notebooks for your homework, Again, your grade will not be affected by the file format of your homework.</p>
 </div>
 </div>
-<div class="section" id="id3">
-<h1>索引和搜索页面<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h1>
+</div>
+<div class="section" id="id4">
+<h1>索引和搜索页面<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">索引</span></a></p></li>
 <li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">模块索引</span></a></p></li>
@@ -261,7 +311,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="ch1/index.html" class="btn btn-neutral float-right" title="1. 基础准备及入门" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="intro_matlab.html" class="btn btn-neutral float-right" title="1. MATLAB 介绍" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
     </div>

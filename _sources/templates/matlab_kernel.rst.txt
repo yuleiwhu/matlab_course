@@ -1,0 +1,13 @@
+Matlab in Jupyter Notebooks
+----------------------------------------
+
+This course is taught in MATLAB. One thing you could try is to run MATLAB codes in Jupyter Notebooks. Jupyter Notebook is a must-learn tool for data scientists, and it is also becoming popular in the traditional scientific computing community. It is a great tool for interactive computing and allows you to combine codes, simulation results, and descriptions such as latex equations in a single file.
+
+See how to install and use it at:
+
+- `Install Jupyter-MATLAB <https://am111.readthedocs.io/en/latest/jmatlab_install.html>`_
+- `Use MATLAB in Jupyter Notebooks <https://am111.readthedocs.io/en/latest/jmatlab_use.html>`_
+
+Some basic understanding of Linux command line and Python will be useful for installation. If you are just new to programming, you should simply use MATLAB’s original, basic user interface and come back to this tutorial later when you are interested.
+
+If you feel good about this tool, you can choose to submit notebooks for your homework, Again, your grade will not be affected by the file format of your homework.

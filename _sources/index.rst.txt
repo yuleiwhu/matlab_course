@@ -6,19 +6,16 @@
 欢迎进入《Matlab基础》课程网页！
 ======================================
 
-**课程名称**：Matlab基础
+:课程名称: Matlab 基础
+:授课老师: 余磊~副教授，(ly.wd@whu.edu.cn)
+:助教:
+:课程时间:
+:课程地点:
+:教材: 《MATLAB教程》R2014a（2015年修订）  2015年印刷,张志涌等编著，北京航空航天大学出版社 
 
-**授课老师**：余磊~副教授，(ly.wd@whu.edu.cn)
+.. note:: 本课程网站是武汉大学2019年秋季《Matlab基础》课程网站。本课程网站基于****教材 [cit]_。
 
-**助教**：
-
-**课程时间**：
-
-**课程地点**：
-
-**教材**：《MATLAB教程》R2014a（2015年修订）  2015年印刷,张志涌等编著，北京航空航天大学出版社 
-
-本课程网站是武汉大学2019年秋季《Matlab基础》课程网站。本课程网站基于****教材。
+.. [cit] A citation
 
 课程目的
 -----------------
@@ -26,20 +23,18 @@
 - 缩短研究周期，加快探索步伐，激发创作灵感。
 - 不希望学生在编程上化太多时间，课程目的不是学习编程。
 - 紧密结合科学的前沿。
-- 论文=Matlab+word 。
 
 MATLAB的特点
 -----------------
 
-- 编写程序犹如在演算纸上排列出公式与求解问题。
-- 语法非常简单，编程效率高，易学易懂，方便实用。没有编程基础的学生也可以很快地编写出程序。
-- 可以直接在Word中被调用，使用相当方便实用。
-- 强大的科学计算能力、卓越的可视化功能、开放式可扩展环境。不同的应用学科、几十种应用工具箱
-
-  - 研究人员可以直观、方便地进行分析、计算和设计工作，
-  - 应用工具箱可以更进一步简化编程，甚至给很复杂的问题提供“傻瓜照相式”的解决办法，极大地提高了工作效率。
-- 可实现MATLAB与Visual C++等通用编程平台的混合编程。取长补短，以提高程序的运行效率，丰富程序开发的手段。
-
+- 用于科学和工程计算的高级语言；
+- 为迭代开发、设计和解决问题而优化的桌面环境；
+- 用于可视化数据的图形和用于创建自定义图表的工具；
+- 用于曲线配合、数据分类、信号分析、控制系统调优等任务的应用；
+- 为广泛的工程和科学应用程序而附加的工具箱；
+- 用于构建具有自定义用户接口的应用程序的工具；
+- 用于 C/ C++、Java®、.NET、Python、SQL、Hadoop 和 Microsoft® Excel® 的接口；
+- 可选择免版税部署的方式与最终用户共享 MATLAB 程序。
 
 
 .. toctree::
@@ -47,8 +42,10 @@ MATLAB的特点
    :numbered: 3
    :caption: 课件和讲义
 
+   intro_matlab
    ch1/index
-
+   quick_start
+   test
 
 
 .. toctree::
@@ -59,20 +56,14 @@ MATLAB的特点
 
 
 
+.. toctree::
+   :maxdepth: 2
+   :caption: 网站相关:
 
-Matlab in Jupyter Notebooks
-----------------------------------------
+   templates/samples
+   templates/matlab_kernel
 
-This course is taught in MATLAB. One thing you could try is to run MATLAB codes in Jupyter Notebooks. Jupyter Notebook is a must-learn tool for data scientists, and it is also becoming popular in the traditional scientific computing community. It is a great tool for interactive computing and allows you to combine codes, simulation results, and descriptions such as latex equations in a single file.
 
-See how to install and use it at:
-
-- `Install Jupyter-MATLAB <https://am111.readthedocs.io/en/latest/jmatlab_install.html>`_
-- `Use MATLAB in Jupyter Notebooks <https://am111.readthedocs.io/en/latest/jmatlab_use.html>`_
-
-Some basic understanding of Linux command line and Python will be useful for installation. If you are just new to programming, you should simply use MATLAB’s original, basic user interface and come back to this tutorial later when you are interested.
-
-If you feel good about this tool, you can choose to submit notebooks for your homework, Again, your grade will not be affected by the file format of your homework.
    
 索引和搜索页面
 ==================
