@@ -43,7 +43,6 @@ MATLAB的特点
    :caption: 课件和讲义
 
    intro_matlab
-   ch1/index
    quick_start
    test
 
