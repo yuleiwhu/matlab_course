@@ -40,7 +40,7 @@ MATLAB的特点
 .. toctree::
    :maxdepth: 2
    :numbered: 3
-   :caption: 课件和讲义
+   :caption: 课程内容
 
    intro_matlab
    quick_start
