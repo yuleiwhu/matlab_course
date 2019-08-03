@@ -44,7 +44,7 @@ MATLAB的特点
 
    intro_matlab
    quick_start
-   test
+   
 
 
 .. toctree::
@@ -59,6 +59,7 @@ MATLAB的特点
    :maxdepth: 2
    :caption: 网站相关:
 
+   test
    templates/samples
    templates/matlab_kernel
 
