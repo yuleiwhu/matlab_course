@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3. 图形 &mdash; Matlab课程  文档</title>
+  <title>图形 &mdash; Matlab课程  文档</title>
   
 
   
@@ -40,8 +40,7 @@
   <link rel="stylesheet" href="_static/proof.css" type="text/css" />
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
-    <link rel="next" title="第一章课后习题" href="homework/c1.html" />
-    <link rel="prev" title="2. 快速入门" href="quick_start.html" /> 
+    <link rel="prev" title="快速入门" href="quick_start.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -86,28 +85,25 @@
             
             
               <p class="caption"><span class="caption-text">课程内容</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="intro_matlab.html">1. MATLAB 介绍</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">2. 快速入门</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">3. 图形</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#基本绘图函数">3.1. 基本绘图函数</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#创建二维线图">3.1.1. 创建二维线图</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#在一个图形中绘制多条曲线">3.1.2. 在一个图形中绘制多条曲线</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#指定线条样式和颜色">3.1.3. 指定线条样式和颜色</a></li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 <p class="caption"><span class="caption-text">课后作业</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="homework/c1.html">第一章课后习题</a></li>
 </ul>
-<p class="caption"><span class="caption-text">网站相关:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="test.html">The reStructuredText Cheat Sheet: Syntax Reminders</a></li>
-<li class="toctree-l1"><a class="reference internal" href="templates/samples.html">示例</a></li>
-<li class="toctree-l1"><a class="reference internal" href="templates/matlab_kernel.html">Matlab in Jupyter Notebooks</a></li>
+<p class="caption"><span class="caption-text">其他教程资料:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">快速入门</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">图形</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#基本绘图函数">基本绘图函数</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#创建二维线图">创建二维线图</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#在一个图形中绘制多条曲线">在一个图形中绘制多条曲线</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#指定线条样式和颜色">指定线条样式和颜色</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             
@@ -153,7 +149,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>3. 图形</li>
+      <li>图形</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -395,11 +391,11 @@ div.rendered_html tbody tr:hover {
 }
 </style>
 <div class="section" id="图形">
-<h1>3. 图形<a class="headerlink" href="#图形" title="永久链接至标题">¶</a></h1>
+<h1>图形<a class="headerlink" href="#图形" title="永久链接至标题">¶</a></h1>
 <div class="section" id="基本绘图函数">
-<h2>3.1. 基本绘图函数<a class="headerlink" href="#基本绘图函数" title="永久链接至标题">¶</a></h2>
+<h2>基本绘图函数<a class="headerlink" href="#基本绘图函数" title="永久链接至标题">¶</a></h2>
 <div class="section" id="创建二维线图">
-<h3>3.1.1. 创建二维线图<a class="headerlink" href="#创建二维线图" title="永久链接至标题">¶</a></h3>
+<h3>创建二维线图<a class="headerlink" href="#创建二维线图" title="永久链接至标题">¶</a></h3>
 <p>绘图函数具有不同的形式，具体取决于输入参数。</p>
 <ul class="simple">
 <li><p>如果<strong>y</strong>是一个向量，则<strong>plot(y)</strong>语句将绘制出以<strong>y</strong>中元素的下标为横坐标、元素值为纵坐标、各点以线段相连的线条。</p></li>
@@ -448,7 +444,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <div class="section" id="在一个图形中绘制多条曲线">
-<h3>3.1.2. 在一个图形中绘制多条曲线<a class="headerlink" href="#在一个图形中绘制多条曲线" title="永久链接至标题">¶</a></h3>
+<h3>在一个图形中绘制多条曲线<a class="headerlink" href="#在一个图形中绘制多条曲线" title="永久链接至标题">¶</a></h3>
 <p>通过调用一次<strong>plot</strong>函数，<strong>MATLAB</strong>根据多对x-y数据绘制出多条颜色不同的曲线。</p>
 <p>例如，这些语句绘制出三个与<strong>x</strong>相关的函数：</p>
 <div class="nbinput docutils container">
@@ -496,7 +492,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <div class="section" id="指定线条样式和颜色">
-<h3>3.1.3. 指定线条样式和颜色<a class="headerlink" href="#指定线条样式和颜色" title="永久链接至标题">¶</a></h3>
+<h3>指定线条样式和颜色<a class="headerlink" href="#指定线条样式和颜色" title="永久链接至标题">¶</a></h3>
 <p>使用<strong>plot</strong>命令绘制数据时,可以指定线条颜色、样式和添加标记(如加号或圆圈)：</p>
 <p><code class="docutils literal notranslate"><span class="pre">plot(x,y,'color_style_marker')</span></code></p>
 <p><strong>color_style_marker</strong>包含一到四个字符(通过单引号隔开),由颜色、线条样式和标记类型构成。例如,</p>
@@ -566,10 +562,8 @@ div.rendered_html tbody tr:hover {
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="homework/c1.html" class="btn btn-neutral float-right" title="第一章课后习题" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="quick_start.html" class="btn btn-neutral float-left" title="2. 快速入门" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="quick_start.html" class="btn btn-neutral float-left" title="快速入门" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
