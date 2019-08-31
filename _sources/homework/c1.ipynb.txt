@@ -24,30 +24,13 @@
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": 5,
+   "cell_type": "markdown",
    "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      " \n",
-      "ans =\n",
-      " \n",
-      "1.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753\n",
-      " \n",
-      " \n",
-      "ans =\n",
-      " \n",
-      "-0.00000000000000000000000000000000000000000000000000000000002353236187028555535453973625734589094060704280108087607709780499199889486810214543606320779859021763\n",
-      " \n"
-     ]
-    }
-   ],
    "source": [
+    "```matlab\n",
     "vpa(sqrt(2),90)\n",
-    "vpa(sqrt(2)-vpa(sqrt(2),50),100)"
+    "vpa(sqrt(2)-vpa(sqrt(2),50),100)\n",
+    "```"
    ]
   },
   {
@@ -61,45 +44,6 @@
     "w2=(a^2)^(1/3)\t\n",
     "w3=(a^(1/3))^2\t\n",
     "```"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 10,
-   "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "\n",
-      "a =\n",
-      "\n",
-      "    -8\n",
-      "\n",
-      "\n",
-      "w1 =\n",
-      "\n",
-      "  -2.0000 + 3.4641i\n",
-      "\n",
-      "\n",
-      "w2 =\n",
-      "\n",
-      "    4.0000\n",
-      "\n",
-      "\n",
-      "w3 =\n",
-      "\n",
-      "  -2.0000 + 3.4641i\n",
-      "\n"
-     ]
-    }
-   ],
-   "source": [
-    "a = -8\n",
-    "w1=a^(2/3)     \n",
-    "w2=(a^2)^(1/3)    \n",
-    "w3=(a^(1/3))^2 "
    ]
   },
   {
@@ -123,14 +67,15 @@
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": null,
+   "cell_type": "markdown",
    "metadata": {},
-   "outputs": [],
-   "source": []
+   "source": [
+    "6. MATLAB桌面上有哪些图标和超链接可引出帮助浏览器？它们又有什么不同？\n"
+   ]
   }
  ],
  "metadata": {
+  "hide_input": false,
   "kernelspec": {
    "display_name": "Matlab",
    "language": "matlab",
