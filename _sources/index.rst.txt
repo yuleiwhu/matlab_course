@@ -3,46 +3,73 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-欢迎进入《Matlab基础》课程网页！
+欢迎进入《Matlab基础及应用》课程网页！
 ======================================
 
-:课程名称: Matlab 基础
+:课程名称: Matlab 基础及应用
 :授课老师: 余磊~副教授，(ly.wd@whu.edu.cn)
-:助教:
 :课程时间: 1-18周，周一，11-12节
 :课程地点: 1区3-303
 :教材: 《MATLAB教程》R2014a（2015年修订）  2015年印刷,张志涌等编著，北京航空航天大学出版社 
+:上课课件: 
 
-.. note:: 本课程网站是武汉大学2019年秋季《Matlab基础》课程网站。本课程网站基于****教材。
+* 第一章 基础准备及入门 1_, 1.1_, 1.2_, 1.3_, 1.4-5_, 1.6-7_
 
+* 第二章 符号计算 2_
 
-课程目的
------------------
+* 第三章 数值阵列及向量化运算 3.1-2_, 3.3-5_
+
+* 第四章 数值计算 4_
+
+* 第五章 数据和函数的可视化 5.1_, 5.2_ 
+
+* 第六章 M文件和函数句柄 6_
+
+.. _1: courses/ch1/Ch1.mlx
+.. _1.1: courses/ch1/Ch1_1.mlx
+.. _1.2: courses/ch1/Ch1_2.mlx
+.. _1.3: courses/ch1/Ch1_3.mlx
+.. _1.4-5: courses/ch1/Ch1_4_5.mlx
+.. _1.6-7: courses/ch1/Ch1_6_7.mlx
+.. _2: courses/ch2/Ch2.mlx
+.. _3.1-2: courses/ch3/Ch3_1-2.mlx
+.. _3.3-5: courses/ch3/Ch3_3-5.mlx
+.. _4: courses/ch4/ch4.mlx
+.. _5.1: courses/ch5/ch5_1.mlx
+.. _5.2: courses/ch5/ch5_2.mlx
+.. _6: courses/ch6/ch6.mlx
+
+:课程目的:
+
 - 掌握用计算机建模、计算，以及用图表形象表达分析结果从而促进逻辑思维的系统方法。
+
 - 缩短研究周期，加快探索步伐，激发创作灵感。
+
 - 不希望学生在编程上化太多时间，课程目的不是学习编程。
+
 - 紧密结合科学的前沿。
 
-MATLAB的特点
------------------
+:MATLAB的特点:
 
 - 用于科学和工程计算的高级语言；
+
 - 为迭代开发、设计和解决问题而优化的桌面环境；
+
 - 用于可视化数据的图形和用于创建自定义图表的工具；
+
 - 用于曲线配合、数据分类、信号分析、控制系统调优等任务的应用；
+
 - 为广泛的工程和科学应用程序而附加的工具箱；
+
 - 用于构建具有自定义用户接口的应用程序的工具；
+
 - 用于 C/ C++、Java®、.NET、Python、SQL、Hadoop 和 Microsoft® Excel® 的接口；
+
 - 可选择免版税部署的方式与最终用户共享 MATLAB 程序。
 
+:课程安排:
 
-.. toctree::
-   :maxdepth: 2
-   :numbered: 3
-   :caption: 课程内容
 
-   intro_matlab
-   ch2
 
 
 .. toctree::
@@ -59,9 +86,10 @@ MATLAB的特点
 
 
 .. toctree::
-   :maxdepth: 2
-   :caption: 其他教程资料:
+   :maxdepth: 1
+   :caption: 其他教程资料
 
+   intro_matlab
    quick_start
    ch4
 
