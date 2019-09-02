@@ -40,7 +40,7 @@
   <link rel="stylesheet" href="../_static/proof.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="快速入门" href="../quick_start.html" />
+    <link rel="next" title="第三章课后作业" href="c3.html" />
     <link rel="prev" title="第一章课后习题" href="c1.html" /> 
 </head>
 
@@ -88,11 +88,16 @@
               <p class="caption"><span class="caption-text">课程内容</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../intro_matlab.html">1. MATLAB 介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ch2.html">2. dd</a></li>
 </ul>
 <p class="caption"><span class="caption-text">课后作业</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="c1.html">第一章课后习题</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">第二章课后习题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c3.html">第三章课后作业</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c4.html">第四章课后作业</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c5.html">第五章课后习题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c6.html">第六章课后习题</a></li>
 </ul>
 <p class="caption"><span class="caption-text">其他教程资料:</span></p>
 <ul>
@@ -188,33 +193,27 @@
 </style>
 <div class="section" id="id1">
 <h1>第二章课后习题<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
-<ol class="simple">
-<li><p>说出以下三条指令产生的结果各属于哪种数据类型，是“双精度”对象，还是“符号”对象？</p></li>
-</ol>
+<p>1 说出以下三条指令产生的结果各属于哪种数据类型，是“双精度”对象，还是“符号”对象？</p>
 <div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span><span class="o">/</span><span class="mi">7</span><span class="o">+</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">sym</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">7</span><span class="o">+</span><span class="mf">0.1</span><span class="p">),</span> <span class="n">vpa</span><span class="p">(</span><span class="n">sym</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">7</span><span class="o">+</span><span class="mf">0.1</span><span class="p">))</span>
 </pre></div>
 </div>
-<ol class="simple">
-<li><p>在不加专门指定的情况下，以下符号表达式中的哪一个变量被认为是独立自由变量。</p></li>
-</ol>
+<p>2 在不加专门指定的情况下，以下符号表达式中的哪一个变量被认为是独立自由变量。</p>
 <div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">sym</span><span class="p">(</span><span class="s">&#39;sin(w*t)&#39;</span><span class="p">)</span> <span class="p">,</span> <span class="n">sym</span><span class="p">(</span><span class="s">&#39;a*exp(-X)&#39;</span> <span class="p">)</span> <span class="p">,</span> <span class="n">sym</span><span class="p">(</span><span class="s">&#39;z*exp(j*theta)&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<ol class="simple">
-<li><p>求符号矩阵$A=\left\lbrack \begin{array}{ccc}
+<p>3 求符号矩阵$A=\left\lbrack \begin{array}{ccc}
 a_{11}  &amp; a_{12}  &amp; a_{13} \\
 a_{21}  &amp; a_{22}  &amp; a_{23} \\
 a_{31}  &amp; a_{32}  &amp; a_{33}
-\end{array}\right\rbrack$的行列式值和逆，所得结果应采用“子表达式置换”简洁化。</p></li>
-<li><p>对函数$f\left(k\right)=\left\lbrace \begin{array}{cc}
+\end{array}\right\rbrack$的行列式值和逆，所得结果应采用“子表达式置换”简洁化。</p>
+<p>4 对函数$f\left(k\right)=\left\lbrace \begin{array}{cc}
 a^k  &amp; k\ge 0\\
 0 &amp; k&lt;0
-\end{array}\right.$，当$a$为正实数时，求$\sum_{k=0}^{\infty  } f\left(k\right)z^{-k}$。（实际上，这就是根据定义求Z变换问题。）</p></li>
-<li><p>对于$x&gt;0$，求$\sum_{k=0}^{\infty  } \frac{ 2}{2k+1}{\left(\frac{x-1}{x+1}\right)}^{2k+1}$。（提示：理论结果为$\mathrm{ln} x$）</p></li>
-<li><p>(1) 通过符号计算求$y\left(t\right)=\mathrm{sin} t$的导数$\frac{d y}{d t}$。（2）然后根据此结果，求$\left.\frac{dy}{dt}\right\vert_{t=0^-}$和$\left.\frac{dy}{dt}\right\vert_{t=\frac{\pi}{2}}$。</p></li>
-<li><p>求出$\int_{-5\pi }^{1\ldotp 7\pi } e^{-|x|} |\mathrm{sin}x|dx$的具有64位有效数字的积分值。</p></li>
-<li><p>计算二重积分$\int_1^2 \int_1^{x^2 } \left(x^2 +y^2 \right)dydx$。</p></li>
-</ol>
+\end{array}\right.$，当$a$为正实数时，求$\sum_{k=0}^{\infty  } f\left(k\right)z^{-k}$。（实际上，这就是根据定义求Z变换问题。）</p>
+<p>5 对于$x&gt;0$，求$\sum_{k=0}^{\infty  } \frac{ 2}{2k+1}{\left(\frac{x-1}{x+1}\right)}^{2k+1}$。（提示：理论结果为$\mathrm{ln} x$）</p>
+<p>6 (1) 通过符号计算求$y\left(t\right)=\mathrm{sin} t$的导数$\frac{d y}{d t}$。（2）然后根据此结果，求$\left.\frac{dy}{dt}\right\vert_{t=0^-}$和$\left.\frac{dy}{dt}\right\vert_{t=\frac{\pi}{2}}$。</p>
+<p>7 求出$\int_{-5\pi }^{1\ldotp 7\pi } e^{-|x|} |\mathrm{sin}x|dx$的具有64位有效数字的积分值。</p>
+<p>8 计算二重积分$\int_1^2 \int_1^{x^2 } \left(x^2 +y^2 \right)dydx$。</p>
 </div>
 
 
@@ -225,7 +224,7 @@ a^k  &amp; k\ge 0\\
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../quick_start.html" class="btn btn-neutral float-right" title="快速入门" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="c3.html" class="btn btn-neutral float-right" title="第三章课后作业" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="c1.html" class="btn btn-neutral float-left" title="第一章课后习题" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

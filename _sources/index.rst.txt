@@ -51,6 +51,10 @@ MATLAB的特点
 
    homework/c1
    homework/c2
+   homework/c3
+   homework/c4
+   homework/c5
+   homework/c6
 
 
 

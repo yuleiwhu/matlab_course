@@ -1,32 +1,30 @@
 # 第二章课后习题
 
-1. 说出以下三条指令产生的结果各属于哪种数据类型，是“双精度”对象，还是“符号”对象？
-
+1 说出以下三条指令产生的结果各属于哪种数据类型，是“双精度”对象，还是“符号”对象？
 ```matlab
 3/7+0.1, sym(3/7+0.1), vpa(sym(3/7+0.1))
 ```
 
-1. 在不加专门指定的情况下，以下符号表达式中的哪一个变量被认为是独立自由变量。
-
+2 在不加专门指定的情况下，以下符号表达式中的哪一个变量被认为是独立自由变量。
 ```matlab
 sym('sin(w*t)') , sym('a*exp(-X)' ) , sym('z*exp(j*theta)')
 ```
 
-1. 求符号矩阵$A=\left\lbrack \begin{array}{ccc}
+3 求符号矩阵$A=\left\lbrack \begin{array}{ccc}
 a_{11}  & a_{12}  & a_{13} \\\\
 a_{21}  & a_{22}  & a_{23} \\\\
 a_{31}  & a_{32}  & a_{33} 
 \end{array}\right\rbrack$的行列式值和逆，所得结果应采用“子表达式置换”简洁化。
 
-4. 对函数$f\left(k\right)=\left\lbrace \begin{array}{cc}
+4 对函数$f\left(k\right)=\left\lbrace \begin{array}{cc}
 a^k  & k\ge 0\\\\
 0 & k<0
 \end{array}\right.$，当$a$为正实数时，求$\sum_{k=0}^{\infty  } f\left(k\right)z^{-k}$。（实际上，这就是根据定义求Z变换问题。）
 
-5. 对于$x>0$，求$\sum_{k=0}^{\infty  } \frac{ 2}{2k+1}{\left(\frac{x-1}{x+1}\right)}^{2k+1}$。（提示：理论结果为$\mathrm{ln} x$）
+5 对于$x>0$，求$\sum_{k=0}^{\infty  } \frac{ 2}{2k+1}{\left(\frac{x-1}{x+1}\right)}^{2k+1}$。（提示：理论结果为$\mathrm{ln} x$）
 
-6. (1) 通过符号计算求$y\left(t\right)=\mathrm{sin} t$的导数$\frac{d y}{d t}$。（2）然后根据此结果，求$\left.\frac{dy}{dt}\right\vert_{t=0^-}$和$\left.\frac{dy}{dt}\right\vert_{t=\frac{\pi}{2}}$。
+6 (1) 通过符号计算求$y\left(t\right)=\mathrm{sin} t$的导数$\frac{d y}{d t}$。（2）然后根据此结果，求$\left.\frac{dy}{dt}\right\vert_{t=0^-}$和$\left.\frac{dy}{dt}\right\vert_{t=\frac{\pi}{2}}$。
 
-7. 求出$\int_{-5\pi }^{1\ldotp 7\pi } e^{-|x|} |\mathrm{sin}x|dx$的具有64位有效数字的积分值。
+7 求出$\int_{-5\pi }^{1\ldotp 7\pi } e^{-|x|} |\mathrm{sin}x|dx$的具有64位有效数字的积分值。
 
-8. 计算二重积分$\int_1^2 \int_1^{x^2 } \left(x^2 +y^2 \right)dydx$。
+8 计算二重积分$\int_1^2 \int_1^{x^2 } \left(x^2 +y^2 \right)dydx$。
