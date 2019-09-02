@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>图形 &mdash; Matlab课程  文档</title>
+  <title>第 2 章 符号计算 &mdash; Matlab课程  文档</title>
   
 
   
@@ -86,17 +86,16 @@
               <p class="caption"><span class="caption-text">课程内容</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="intro_matlab.html">1. MATLAB 介绍</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">2. 快速入门</a></li>
 </ul>
 <p class="caption"><span class="caption-text">课后作业</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="homework/c1.html">第一章课后习题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="homework/c2.html">第二章课后习题</a></li>
 </ul>
-<p class="caption"><span class="caption-text">网站相关:</span></p>
+<p class="caption"><span class="caption-text">其他教程资料:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="test.html">The reStructuredText Cheat Sheet: Syntax Reminders</a></li>
-<li class="toctree-l1"><a class="reference internal" href="templates/samples.html">示例</a></li>
-<li class="toctree-l1"><a class="reference internal" href="templates/matlab_kernel.html">Matlab in Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">快速入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch4.html">图形</a></li>
 </ul>
 
             
@@ -142,7 +141,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>图形</li>
+      <li>第 2 章 符号计算</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -163,204 +162,6 @@
             
   
 <style>
-/* CSS for nbsphinx extension */
-
-/* remove conflicting styling from Sphinx themes */
-div.nbinput,
-div.nbinput div.prompt,
-div.nbinput div.input_area,
-div.nbinput div[class*=highlight],
-div.nbinput div[class*=highlight] pre,
-div.nboutput,
-div.nbinput div.prompt,
-div.nbinput div.output_area,
-div.nboutput div[class*=highlight],
-div.nboutput div[class*=highlight] pre {
-    background: none;
-    border: none;
-    padding: 0 0;
-    margin: 0;
-    box-shadow: none;
-}
-
-/* avoid gaps between output lines */
-div.nboutput div[class*=highlight] pre {
-    line-height: normal;
-}
-
-/* input/output containers */
-div.nbinput,
-div.nboutput {
-    display: -webkit-flex;
-    display: flex;
-    align-items: flex-start;
-    margin: 0;
-    width: 100%;
-}
-@media (max-width: 540px) {
-    div.nbinput,
-    div.nboutput {
-        flex-direction: column;
-    }
-}
-
-/* input container */
-div.nbinput {
-    padding-top: 5px;
-}
-
-/* last container */
-div.nblast {
-    padding-bottom: 5px;
-}
-
-/* input prompt */
-div.nbinput div.prompt pre {
-    color: #307FC1;
-}
-
-/* output prompt */
-div.nboutput div.prompt pre {
-    color: #BF5B3D;
-}
-
-/* all prompts */
-div.nbinput div.prompt,
-div.nboutput div.prompt {
-    min-width: 5ex;
-    padding-top: 0.4em;
-    padding-right: 0.4em;
-    text-align: right;
-    flex: 0;
-}
-@media (max-width: 540px) {
-    div.nbinput div.prompt,
-    div.nboutput div.prompt {
-        text-align: left;
-        padding: 0.4em;
-    }
-    div.nboutput div.prompt.empty {
-        padding: 0;
-    }
-}
-
-/* disable scrollbars on prompts */
-div.nbinput div.prompt pre,
-div.nboutput div.prompt pre {
-    overflow: hidden;
-}
-
-/* input/output area */
-div.nbinput div.input_area,
-div.nboutput div.output_area {
-    padding: 0.4em;
-    -webkit-flex: 1;
-    flex: 1;
-    overflow: auto;
-}
-@media (max-width: 540px) {
-    div.nbinput div.input_area,
-    div.nboutput div.output_area {
-        width: 100%;
-    }
-}
-
-/* input area */
-div.nbinput div.input_area {
-    border: 1px solid #e0e0e0;
-    border-radius: 2px;
-    background: #f5f5f5;
-}
-
-/* override MathJax center alignment in output cells */
-div.nboutput div[class*=MathJax] {
-    text-align: left !important;
-}
-
-/* override sphinx.ext.imgmath center alignment in output cells */
-div.nboutput div.math p {
-    text-align: left;
-}
-
-/* standard error */
-div.nboutput div.output_area.stderr {
-    background: #fdd;
-}
-
-/* ANSI colors */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-default-inverse-fg { color: #FFFFFF; }
-.ansi-default-inverse-bg { background-color: #000000; }
-
-.ansi-bold { font-weight: bold; }
-.ansi-underline { text-decoration: underline; }
-
-/* Some additional styling taken form the Jupyter notebook CSS */
-div.rendered_html table {
-  border: none;
-  border-collapse: collapse;
-  border-spacing: 0;
-  color: black;
-  font-size: 12px;
-  table-layout: fixed;
-}
-div.rendered_html thead {
-  border-bottom: 1px solid black;
-  vertical-align: bottom;
-}
-div.rendered_html tr,
-div.rendered_html th,
-div.rendered_html td {
-  text-align: right;
-  vertical-align: middle;
-  padding: 0.5em 0.5em;
-  line-height: normal;
-  white-space: normal;
-  max-width: none;
-  border: none;
-}
-div.rendered_html th {
-  font-weight: bold;
-}
-div.rendered_html tbody tr:nth-child(odd) {
-  background: #f5f5f5;
-}
-div.rendered_html tbody tr:hover {
-  background: rgba(66, 165, 245, 0.2);
-}
-
 /* CSS overrides for sphinx_rtd_theme */
 
 /* 24px margin */
@@ -383,166 +184,223 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="图形">
-<h1>图形<a class="headerlink" href="#图形" title="永久链接至标题">¶</a></h1>
-<div class="section" id="基本绘图函数">
-<h2>基本绘图函数<a class="headerlink" href="#基本绘图函数" title="永久链接至标题">¶</a></h2>
-<div class="section" id="创建二维线图">
-<h3>创建二维线图<a class="headerlink" href="#创建二维线图" title="永久链接至标题">¶</a></h3>
-<p>绘图函数具有不同的形式，具体取决于输入参数。</p>
-<ul class="simple">
-<li><p>如果<strong>y</strong>是一个向量，则<strong>plot(y)</strong>语句将绘制出以<strong>y</strong>中元素的下标为横坐标、元素值为纵坐标、各点以线段相连的线条。</p></li>
-<li><p>如果<strong>x</strong>和<strong>y</strong>都是向量，则它们的长度必须相同，<strong>plot(x,y)</strong>语句将绘制出以<strong>x</strong>中元素值为横坐标、<strong>y</strong>中元素值为纵坐标、各点以线段相连的线条。</p></li>
-</ul>
-<p>使用冒号运算符创建值在 0 到<strong>2Π</strong>间的向量<strong>x</strong> ,计算这些值的正弦值,并绘制结果。</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+<div class="section" id="第-2-章-符号计算">
+<h1>第 2 章 符号计算<a class="headerlink" href="#第-2-章-符号计算" title="永久链接至标题">¶</a></h1>
+<div class="section" id="2.1-引导">
+<h2>2.1 引导<a class="headerlink" href="#2.1-引导" title="永久链接至标题">¶</a></h2>
+<p>符号计算：解算数学表达式、方程不是在离散化的数值点上进行而是凭借一系列恒等式，数学定理，通过推理和演绎获得解析结果。符号计算建立在数值完全准确表达和推演严格解析的基础之上， 所得结果完全准确。 符号运算与数值运算的主要区别： 数值型运算受到计算机有效位数的限制，每次运算都会有截断误差,重复多次运算产生很大的累积误差 符号运算不需要进行数值运算，不会出现截断误差，因此是完全准确的。 符号运算可以得出完全的封闭解或任意精度的数值解。 相对于MATLAB的数值计算“引擎”和“函数库”而言，
+符号计算的“引擎”和“函数库”是独立的。 符号对象必须先定义后使用 MATLAB符号计算的基本要义： 基本符号对象：符号数字，符号变量，符号抽象函数，符号抽象数组 MATLAB的符号表达式和函符号函数的构成： 由基本符号对象、符号运算符、符号工具包预定义函数构成 若符号运算解析受阻得不出解析结果或解算耗时太长 可实施由符号计算引擎提供的有限精度计算。 任何基本符号对象（数字、参数、变量、表达式、函数） 都必须借助专门的符号函数指令sym、 syms或symfun定义。 任何包含符号对象的表达式或方程，将继承符号对象的属性。
+即任何包含符号对象的表达式、方程也一定是符号对象 符号运算的工作机理 MATLAB的符号计算是由MuPAD引擎在其专有的内存工作空间中执行只是把计算结果送回到MANTLAB的内存工作空间 当用sym或syms定义符号变量时，就启动以下过程： ① 启动MuPAD引擎，开启一个专供MuPAD使用的内存空间 ② 被定义变量保存至Matlab内存空间 ③ 对变量的限定性假设保存在MuPAD内存空间中， 并对以后的MuPAD工作方式进行约束 如不带任何约束则默认工作在复数域； 若带有约束integer、positive、rational、real则工作在相应的数域当中。 2.2 基本符号对象的创建
+2.2.1 符号数的创建 1. 非超长符号实数的创建 sym(HandNum) 直接由双精准数值类的数创建符号数字 sym(HandNum,Flag) sc=sym(HandNum) 直接由双精准数值类的数创建符号常数sc 〖说明〗 HandNum必须是非超长数 即有效数字位数不超过15位，否则会引起圆整误差 HandNum必须是单个实数 该单个实数只能是有理数、十进制小数或浮点数的科学计数法形式 -35，137/273793，327.8734，1.9734e-33 返回值是不含误差准确表达HandNum的理论数值或理论数值的符号常数 Flag是浮点数字转换后的表达格式： ‘r’ 有理分数表达符号数字（默认）； ‘d’
+“十进制浮点”近似表达符号数字； ‘e’ 带估计误差的“广义有理表达”符号数字; ‘f’“两个二进制数”近似表达符号数字±[2e+N×2(-52+e)]， N和e为整数 英文字母i、j既是数值计算环境也是符号计算环境下的虚数单元 2. 超长符号实数的创建 创建有效位数大于15位的准确符号数 sym(‘HandNum’) 由数字字符串创建符号数 sc=sym(‘HandNum’) 由数字字符串创建符号常数sc 〖说明〗 HandNum必须处于（英文状态下的）’ ’ 内，构成字符串（附录A） HandNum可以是任意长位数的单个实数（除标准书写的有理数外）
+只能用有理数、预定义常数、十进制小数、科学计数的浮点数表示 如321/1200，10/3，235，pi 也可定义非超长数。只有整数、有理数、预定义常数可保持常数不变 返回值是不含误差的HandNum理论数值或理论数值的符号常数变量 千万不能运行sym(‘i’)或sym(‘j’)，会引起复数表达的混乱</p>
+<p>【例2.1-1】 （1）直接输入数字创建非超长符号实数 a1=sym(-12345678901234) %15位整数 a2=sym(0.12345) %少于15位的小数 a3=sym(1.627e-3) %少于15位的科学计数小数 a4=sym(1234567/7654321) %少于15位的科学计数小数</p>
+<p>（2）创建超准确的超长符号实数 b1=sym(‘123456789012345678901’) %【20位符号整数’‘】 b2=sym(’1.23456789012345678901’) %20位符号小数 b3=sym(‘1234567890123456789/987654321098765432198’)</p>
+<p>（3）直接超长数字输入不能创建希望的准确符号数 c1=sym(123456789012345678901) %20位符号整数 c2=sym(1.23456789012345678901) %20位符号小数 c3=sym(1234567890123456789/987654321098765432198) 3. 符号复数的创建 创建复数，实、虚部中均不得出现运算符。 无论创建实虚部形式还是复指数形式，至少要出现一次sym指令 实部+虚部的符号复数：实虚部不存在任何关联运算，可作为一个整体 sym(1.65+3.47i)是合理的，sym((1.65/2)+(3.47+2.55)i)是不合理的
+复指数形式的符号复数：MATLAB总是将其进行运算转换成实虚部,并以实部、虚部的形式存储。创建时一定要保证符号数字是准确的 创建超长实部+虚部符号复数时，实、虚部分别采用数字字符串创建法</p>
+<div class="line-block">
+<div class="line">【例2.1-2】 （1）实虚部形式 clear a0=sym(1.65)+sym(3.76)<em>sym(i) %严谨格式 a1=sym(1.65)+sym(3.76i)
+a2=sym(1.65)+ i</em>sym(3.76)</div>
+<div class="line">a3=sym(1.65)+ 3.76i a4=1.65+sym(3.76i) a5=sym(1.65+3.76i) isAlways(a0==a5)</div>
+</div>
+<p>（2）复指数形式 b0=sym(2)<em>exp(sym(i)</em>sym(3)<em>sym(pi)/sym(4)) %严谨格式 b1=sym(2)</em>exp(i<em>pi</em>sym(3/4)) b2=sym(2)<em>exp(i</em>sym(pi)<em>3/4) b3=2</em>exp(i<em>sym(pi)</em>3/4) b4=sym(2)<em>exp(i</em>pi*3/4)</p>
+<p>c1=3.65<em>exp(sym(i)</em>3<em>sin(0.5)/4) % sin(0.5)参与了计算 c2=sin(3.65)</em>exp(sym(i)*3/sym(4)) % sin(3.65)参与了计算</p>
+<p>d0=sym(‘1.23456789012345678’)+sym(‘9.87654321098765432’)<em>i d1=1.23456789012345678+sym(‘9.87654321098765432’)</em>i d1=sym(‘1.23456789012345678’)+9.87654321098765432*i</p>
+<p>2.2.2 符号变量的创建 1. 基本符号变量的创建 经典教科书里，表达式e-axsinbx中的a,b称为参数，x称为变量。 在MATLAB的符号计算中，a、b、x统称为基本符号变量 其中x总被默认为自由（待解）符号变量， 其它基本符号变量被作为符号参数处理。</p>
+<div class="line-block">
+<div class="line">定义基本符号变量的指令格式： pr=sym(‘pr’) 定义单个复数域符号变量pr syms pr1 pr2… prN 定义多个复数域符号变量para1…paraN 〖说明〗 sym只对单变量作用，可创建符号数字/符号常数/符号矩阵 syms可定义多个符号变量，各变量名之间必须用空格隔开 syms不能用于对数值、符号常数的定义。 符号变量的取名规则与数值计算环境相同： 尽量不用预定义变量名、函数名和专用变量名（i、j、pi）等 2. 符号数组的创建 两种创建符号数组的方法：</div>
+<div class="line">分步创建法：先创建符号变量，再议符号变量为元素创建符号矩阵 syms e f g h; B=[ e,f;g,h]</div>
+<div class="line">同步创建法 A=sym(‘a%d%d’,dim) 创建dim维抽象符号数组， A=sym(‘a’,dim) 下标形式相当于 %d_%d 〖说明〗 a用于指定创建数组的元素名，必须是英文单引号下的英文字母 dim可是整数n或矩阵[m,n]，可形成行数组[1,n]或列数组[m,1] A是创建的抽象符号数组，存于MATLAB工作空间，但没创建元素名抽象符号数组（矩阵）用于理论分析和全解析计算 分步法创建的数组，元素变量和数组变量均存于MATLAB工作空间中</div>
+</div>
+<p>【例2.2-3】 clear syms a b c d e f g h k % A=[a,b,c;d,e,f;g,h,k] B=[3<em>a+4</em>b,sin(c)<em>exp(d);sqrt(c/d),log(d</em>f)] R=sym(‘r%d%d’,[3,3]) %‘r%d_%d’; ‘r_%d_%d’ Q=sym(‘q’,[2,4]) Q1=sym(‘q’,[1,4])</p>
+<p>whos % r、q、q1元素都不是变量</p>
+<p>AR=A<em>R %矩阵相乘 AR1=A.</em>R %数组相乘</p>
+<ol class="arabic simple" start="3">
+<li><p>受限符号变量的创建 MuPAD默认符号变量为复数变量，应用中常要对符号变量进行各种假设 受限符号变量由两部分组成：符号变量存在于MATLAB工作空间中； 限制性假设存在于执行符号计算的MuPAD工作空间中 简单限定法 x=sym(‘x’,‘set’) 创建set 所指定数集的符号变量x syms x y z set 创建set 所指定数集的符号变量x,y,z 专用命令限定设置法 assume(expr,‘set’) 废除现有全部假设，申明符号表达式或 符号数组expr属于集合set的新假设 assume(conds) 废除现有全部假设后由conds定义新的假设 assumeAlso(expr,‘set’) 继续追加
+expr属于集合set的新假设 assumeAlso(conds) 继续追加由conds定义的新假设 〖说明〗 ① sym或syms只能对符号变量做简单的限制性假设，不推荐使用 ② set可取字符串integer、positive、rational、real的任何一个， ③ expr由符号变量构成的符号表达式或符号数组 若expr是数组，则数组的每个元素都属于set集合 ④ conds是那些可以用符号表达式或符号表达式矩阵、符号方程或 方程矩阵、符号关系或关系式矩阵、符号逻辑描述的假设</p></li>
+<li><p>符号变量的清除和限定性设置的检测与撤销 由于符号变量和其假设存放在不同的内存空间， 因此删除符号变量和撤销关于变量的假设是两件需要分别处理的事。 clear var1 var2…varN %清除MATLAB工作空间中的变量 clear %清除MATLAB工作空间中的所有变量 clear all %清空MATLAB内存，清除MuPAD所有假设 clear classes %清除所有类及对象(含符号类),清除MuPAD所有假设 ==================================================== assume(expr,‘clear’) %撤销符号表达式或方程中所有变量的全部假设 assume([var1,var2,…,varN],‘clear’)
+%撤销假设，恢复为“复数”变量 ==================================================== assumptions(expr) %显示expr中所有符号变量的全部限定性假设 assumptions %显示影响MATLAB工作空间的所有变量的假设</p></li>
+</ol>
+<p>【例2.2-5】符号变量的默认数域是复数域。 （1）创建求解符号变量、方程并求解 clear all % syms x % f=x^3+475*x/100+5/2; % r=solve(f)</p>
+<p>assumptions(x)</p>
+<p>（2）进行假设设置 assume(x,‘real’) %求实数根 r21=solve(f)</p>
+<p>assumptions</p>
+<p>（3）观察指令的作用范围 assume(x,‘clear’) %撤销假设对MATLAB工作空间没影响 assume(imag(x)&gt;0) % assumeAlso(real(x)&gt;0) r22=solve(f,x)</p>
+<p>assumptions</p>
+<p>clear x %【清除变量假设没撤销】 assumptions</p>
+<p>clear all %撤销所有假设和清除工作空间所有变量 assumptions</p>
+<p>2.3 符号运算操作基础 2.3.1 符号算术运算符及函数 1、符号数学与数值数学中算术运算的异同 符号运算中，运算的是符号对象，结果是经过默认简化的符号对象 数值运算中，运算的是数值对象，运算结果就是数值 两者处理的对象和产生的结果的类型不同，但运算中体现的理论意义和实际影响相同。因此，MATLAB采用面向对象技术，设计了一组相同的运算符和许多名称完全相同的函数 2、符号算术运算符 MATLAB为数值计算和符号计算设计了统一的运算符，实际使用中， 根据参与运算的对象是数值或符号，自动调整为数值运算或符号运算
+3、符号计算的工具包函数 从形式上看，数值类函数与符号类函数没什么区别 运算中是调用数值计算文件还是符号计算文件，由计算的对象属性确定</p>
+<p>2.3.2 符号关系和符号逻辑表述 1、 符号关系逻辑与数值关系逻辑的异同 数值计算环境下的关系运算和逻辑运算， 关系符和逻辑符两侧的是数值对象或数值表达式，结论是逻辑值 符号计算环境下的关系运算和逻辑运算， 关系符和逻辑符两侧是符号对象：符号数字、符号变量、符号表达式 符号关系式或逻辑式的处理取决于用户的目的： 求解不等式：solve 判断符号关系式或逻辑式是否成立：isAlways, logical 2、 纯关系、纯逻辑表述符及函数
+处理数值对象和处理符号对象的关系和逻辑运算符符号形式和符号名称均相同，运算中是调用数值计算文件还是符号计算文件，完全由具体的处理对象属性（数值类还是符号类）决定 3、关系逻辑判断函数和直接逻辑判断函数 La=isAlways(cond) %对cond成立性或符号数是否非0给出逻辑判断 La=isAlways(cond, ‘Unknown’, ‘false’) %同上，不显示任何警告提示 La=logical(cond) %对cond成立性或符号数是否非0给出逻辑判断 〖说明〗 La=isAlways(cond)：无法判断cond是否成立时，给出逻辑0判断 同时，还会给出说明“无法判断”的警告信息
+La=isAlways(cond, ‘Unknown’, ‘false’)：只给出逻辑0的判断 logical指令主要用于各种纯符号数字的各种关系式及不含关系符的纯符号表达式和关系式的判断（表2.3-6）</p>
+<div class="line-block">
+<div class="line">【例2.3-1】 （1）数值关系运算 clear all % A=10 % B=sqrt(5); % Rn1=A&gt;B</div>
+<div class="line">W1=(A+B)^2; %(10+51/2)2; W2=(A<sup>2+2AB+B</sup>2); % Rn2=abs(W1-W2)&lt;abs(W1)*eps %【W1-W2的绝对值小于运算误差】</div>
+</div>
+<p>（2）符号关系运算 a=sym(10); % b=sqrt(sym(5)); % Rs1=a&gt;b %建立不等式 w1=(a+b)^2; % w2=(a<sup>2+2ab+b</sup>2); Rs2=w1-w2==0 %建立关系式</p>
+<p>（3）判断 isAlways(Rs1) isAlways(Rs2)</p>
+<p>logical (Rs1) %纯符号数字关系式 logical (Rs2) %错判含关系符号对象纯数字表达式</p>
+<p>2.4 符号表达式和符号函数 2.4.1 创建符号表达式和符号方程 1. 符号表达式和符号方程概念 符号表达式：为表达某种数学算式、实现某种计算目的，采用基本符号对象（数字、常数、变量）、运算符、函数命令等基本要素编写而成的M码。符号表达式中不含等号、不等号这类的关系运算符符号表达式可直接使用，也可借助“=”把其赋义于某符号变量或某符号函数 符号方程：由关系运算符连接两个符号表达式组合而成，表达某种约束关系。符号方程一定包含等号、不等号这类的关系运算符。 2. 符号表达式和符号方程的创建 先定义符号变量，然后再创建
+任何包含符号对象的表达式或方程，将继承符号对象的属性。但要防止数值之间的双精度之类的数值运算 注意，工具包函数输入量或子括号中，不得有纯数字或纯数字表达式， 若有应用sym定义。</p>
+<p>【例2.4-1】创建符号表达式和符号方程 clear all % syms a x Ex21=a<em>sin(1+sqrt(sym(5)))+1 % Ex22=a</em>sin(1+sqrt(5))+sym(1) %错误 Eq21=x/(1+sin(pi/sym(2)+1))==0 % Eq22=x/(1+sin(pi/sqrt(2)+sym(1)))==0 %错误</p>
+<p>whos Ex22 Eq22 %显示继承性</p>
+<p>2.4.2 创建符号函数 1. 符号函数的概念 符号函数：为表达变量间抽象或具体的约束关系而编写的M码。 符号函数由函数名、自变量名、函数体和赋值号组成 符号函数分为符号抽象函数和符号具体函数两类。 符号抽象函数：只有函数名和自变量名，没有具体表达式描述的函数体 符号具体函数：包含符号表达式或符号表达式数组描述的函数体 符号函数都是标量，不论函数体是标量还是数组 2. 符号抽象函数和符号具体函数的创建 在符号函数中，构成函数关系的变量名必须明确指定。即在定义符号函 数时，不仅要指定函数名，而且要指定变量名。 syms
+f(x,y) %创建抽象符号函数及其输入符号变量 ==================================================== syms x y a b %创建基本符号变量 f(x,y) =exprs %创建具体符号函数 ==================================================== f=symfun(exprs,[x,y]) %创建符号函数：exprs为函数体，x、y为自变量 =================================================== formula(f) %获符号函数的函数体exprs argnames(f) %获符号函数的自变量 〖说明〗 函数体exprs可以是符号表达式或符号表达式数组，各种变量必须是已定义的符号变量 f(x,y)
+=exprs创建符号数值函数时，exprs必须是符号数值常数，不能是双精度或其它数值类常数</p>
+<div class="line-block">
+<div class="line">【例2.4-2】 （1）创建抽象符号函数 clear all % syms f1(x,y)</div>
+<div class="line">who</div>
+</div>
+<div class="line-block">
+<div class="line">（2）创建具体符号函数 syms a b; %x、y已定义 F21(x,y) =[a<em>sin(x);b</em>cos(y)]</div>
+<div class="line">F22(x,y) =symfun([1,a<em>x+b</em>exp(y)],[x,y])</div>
+</div>
+<p>（3）创建符号常数函数 G31(x,y) =sym(1/2) G32(x,y) =symfun(sym(1/2),[x,y]) G33(x,y) =1/2 %错，没有定义符号常数</p>
+<p>（4）求已知函数的函数体和自变量 bf=formula(f1) bF21=formula(F21) bG31=formula(G31)</p>
+<p>af=argnames(f1) aF21=argnames(F21) aG31=argnames(G31)</p>
+<ol class="arabic simple" start="3">
+<li><p>符号变量及自由符号变量的认定 解题是围绕自由符号变量进行的，结果通常是用符号参数构成的表达式 自由符号变量可以人为指定，也可以自动认定（默认）。 自动认定的规则： 小写字母x是首选自由符号变量，其后的次序规则是： 与x的ASCII码值之差的绝对值小的字母优先； 绝对值相同时，ASCII码值大的字母优先。 自动识别符号变量时，字母的优先次序为x,y,w,z,v等， 但输出仍按字母表排序，大写字母优先 自动识别表达式中自由符号变量的指令： symvar(expr) 列出表达式中的所有基本符号变量 symvar(expr, n) 列出表达式中n个符号自由变量
+〖说明〗 expr可以是符号表达式、符号函数及由它们构成的符号表达式数组，如果是数组，该命令对自由符号的确认是对整个数组进行的 只能取正整数或inf，n=inf或n≥expr中变量名总数时，相当于省略n</p></li>
+</ol>
+<p>【例2.4-3】 （1）各种符号对象的创建和自变量的认定 clear syms b t u v w x y z X A % 定义基本符号对象 C1=sym(2);C2= sym(pi); xE1=exp(-1i<em>t)</em>sin(x<em>y) % E2=C1</em>x+5<em>X/u+C2</em>w<em>z+A</em>xE1 % 创建符号表达式 f(y)=A<em>sin(x</em>y)<em>exp(-b</em>y) % 创建符号函数 Rf1=symvar(E2) % Rf2=symvar(E2,3) % Rf3=symvar(f,2) %</p>
+<p>（2）符号数组中的变量和自由变量的认定 R1=A<em>sin(y) % R2=abs(v</em>z)&gt;1&amp;z^2&gt;=z %定义符号关系逻辑式 Q=[E2,f(y);R1,R2] %定义符号数组的 Rq2=symvar(Q) Rq2=symvar(Q,3)</p>
+<p>（3）对自由变量的操作 dQ=diff(Q) %【对默认变量求导】 dQx=diff(Q,x) %对指定变量x求导</p>
+<div class="line-block">
+<div class="line">【例2.4-4】用符号法求方程的解。 （1）产生符号表达式和符号函数 clear syms u v w z</div>
+<div class="line">Eq=u<em>w2+zw-v % 表达式 g(z)=uw2+z</em>w==v % 符号方程，“==”是关系运算符 % g(z)不是以z为自由变量的函数 （2）symvar认定的自由变量 symvar(Eq,1) % &lt;5&gt; symvar(g(z),1) % &lt;6&gt;</div>
+</div>
+<p>（3）solve对默认自由变量解方程 R1=solve(Eq) % 关于w解方程u<em>w^2+z</em>w-v=0 &lt;7&gt; R2=solve(g) % 关于w解g（z）所表达的方程 &lt;8&gt;</p>
+<p>（4）对变量z求解 S1=solve(Eq,z) % eq的默认自由变量是w S2=solve(g(z),z) % g(z)的自由变量不是z，求解时需指定</p>
+<p>（5）检验求解结果的正确性 disp(simplify(subs(Eq,z,S1))) %S1代替z，观察Eq是否为0 0</p>
+<p>disp(simplify(g(S2))) %S2代替z，观察g(S2)是否成立 % g(z)=u<em>w^2+z</em>w==v</p>
+<p>【例2.1-5】数据对象及其识别指令的使用。 （1）生产三种不同类型的矩阵，给出不同的显示形式 clear a=1;b=2;c=3;d=4; % 产生4个数值变量 Mn=[a,b;c,d] % 利用已赋值变量构成数值矩阵 Mc=‘[a,b;c,d]’ % 字符串中的a,b,c,d与前面输入的数值变量无关 Ms=sym(Mc) % Ms是一个符号矩阵，它与前面各变量无关</p>
+<p>（2）三种矩阵的大小不同 SizeMn=size(Mn) % 指令size(A):直接显示A的大小 SizeMc=size(Mc) % [r,c]=size(A)：矩阵的行数和列数分别返给r,c SizeMs=size(Ms) % m=size(A,n):返回矩阵A的行/列/页数,n=1/2/3</p>
+<p>（3）三种矩阵的类别不同 CMn=class(Mn) CMc=class(Mc) CMs=class(Ms)</p>
+<p>（4）判断每种矩阵的类别 isa(Mn,‘double’) isa(Mc,‘double’) % 是字符串 isa(Ms,‘sym’) （5）用whos观察内存变量的类别和其它属性 whos Mn Mc Ms % whos(‘Mn’,’Mc’,’Ms’)</p>
+<p>2.5 符号表达式的简化重组和子对象置换 2.5.1 符号表达式的简化 Nexpr=simplify(expr) 预先设定的用模式对expr进行简化，可重复使用 Nexpr=simplify(expr,name,value) 在指定选项下对expr进行简化 〖说明〗 expr是符号表达式、符号函数或由它们组成的数组。 对数组操作是对数组的每个元素操作 Name和value是选项字符串和选项值（表2.5-1），可多套使用。 常用选取的参数如下： ‘IgnoreAnalyticConstraints’是简化规则，缺省值是false ‘Step’是简化轮数，缺省值是1</p>
+<p>【例2.5-1】简化。 syms x f=(1/x<sup>3+6/x</sup>2+12/x+8)^(1/3) g1=simplify(f) g2=simplify(f,‘Steps’,10,‘IgnoreAnalyticConstraints’, true)</p>
+<p>2.5.2 符号表达式的重写 Nexpr=rewrite(expr,‘target’) 将expr等价地重写成target指定的形式 〖说明〗 expr是符号表达式、符号函数或由它们组成的数组。 对数组操作是对数组的每个元素操作 target是希望得到的目标形式（表2.5-2）</p>
+<p>【例2.5-2】 clear all syms x exp2sin =rewrite(exp(x),‘sin’) exp2tan =rewrite(-(exp(x<em>2i)</em>1i-1i)/(exp(x*2i)+1),‘tan’)</p>
+<p>syms a y t f=a*cos(y) rf=rewrite(f,‘exp’)</p>
+<p>2.5.3符号表达式的子对象置换 子对象的置换包括：变量置换，符号矩阵的元素置换，符号表达式中的标量用矩阵或数组置换 以及为使冗长符号表达式简化而实施的置换等。 rs=subs(s,old,new) 用new置换s中所有的old后产生符号结果rs rs=subs(s,new) 用new置换s中所有出现的默认变量，然后计算s 默认变量由symvar定义 [Nexpr,sigma]=subexpr(expr) 从expr中自动提取冗子式 并用sigma（默认）替代并重写expr [Nexpr,var]=subexpr(expr,var) 用var替代冗子式重写expr rs=subexpr(expr, var) 重写的expr 赋给rs rs=subexpr(expr) pretty(expr)
+用编序#号替换expr中的冗子式，使表述简洁 〖说明〗 s可以是符号表达式、符号函数及由它们构成的符号数组 old可以是符号变量、符号表达式、符号数值及元胞数组；、 new可以是数字、符号变量、符号矩阵以及符号数组和元胞数组， new是数组时用数组的每一元素代替old 不管new是符号类型还是双精度类型，也不管是置换部分变量还是置换全部变量 expr是符号表达式、符号函数及由它们构成的符号数组。 冗子式：重复次数较多或本身比较冗长的子表达式</p>
+<div class="line-block">
+<div class="line">【例2.5-3】 （1）单个符号变量或表达式的替换 clear all syms a b c d x y t f1=a<em>sin(x)+b % s11=subs(f1,a,c) % s12=subs(f1,sin(x),log(y)) %
+（2）多个符号变量或表达式的替换 s21=subs(f1,[a,sin(x)],[d*exp(y),cos(y)]) % s22=subs(f1,{a,sin(x)},{d</em>exp(y),cos(y)}) %</div>
+<div class="line">（3）符号方程中子对象的替换 f3(x)=sin(x+c)+d==x % 符号方程 s31=subs(f3,[c,d],[sym(pi/3),1]) % &lt;9&gt; s32=subs(f3,{sin(x+c),d},{exp(-x),2}) % &lt;10&gt;</div>
+<div class="line">（4）符号函数中子对象的替换 f4(x,y)=x+y % 符号函数及 s41=subs(f4,[x,y],[a,b]) % &lt;12&gt; s42(a,y)=subs(f4,x,sin(a)) % &lt;13&gt; （5）符号数组中子对象的替换 f5=[a,b,c/a,d;d,c,b,a*x] %符号数组 s51=subs(f5,a,sym(pi)) % &lt;15&gt;置换f5中所有位置的a s52=subs(f5,f5(1,1),sym(pi)) % 置换与f5(1,1)相同的所有元素 s53=subs(f5,f5(1,3),sym(7)) % &lt;17&gt; f5(1,1)=sym(pi) % 只置换指定元素，不影响其它元素 （6）用符号数组替换表达式中的标量, 结果是符号数组 f6=cos(a<em>t)</em>exp(-b<em>t) % 创建符号表达式 tt=0:0.01:2; % 定义双精度数组
+s61=subs(f6,{a,b,t},{6,1.2,tt}); % f6中符号变量被双精度数值置换 &lt;21&gt; ctt=class(tt) cs61=class(s61) % 检验s61，可知仍是符号对象 plot(tt,s61,‘LineWidth’,3) %可接受双精度和符号数据绘图 &lt;24&gt; xlabel(‘tt’),ylabel(‘s61’) % 标注坐标轴名称 （7）两次置换得到符号数组 t1=0:0.01:2</em>pi; %数值数组 k=[0.6;0.8;1]; %（3<em>1）数值数组 f6=subs(subs(f1,{a,b},{k,2}),x,t1); %符号数组&lt;17&gt; %f1=a</em>sin(x)+b class(f6) plot(t1,f6) %</div>
+</div>
+<p>2.6 变精度计算及数字类型转换 2.6.1 有限精度符号数和变精度计算 相比数值计算，符号计算所需内存较大，计算速度较低为了兼顾计算精度和速度，可采用“变精度”算法同时可用有限精度的数值计算代替无法用封闭解析式表达的符号计算 digits 显示当前环境下已设定的有限精度符号数的有效位数 digits(n) 将指令后的有限精度符号数的有效位数设定为n xn=vpa(x) 据表达式x得到digits指定精度下的符号数字xn xn=vpa(x,n) 据表达式x得到n位有效数字的符号数字xn 仅在运行本指令时起作用。 〖说明〗 digits(n)
+的精度控制只对之后的vpa(x)运算精度和显示位数有影响，对其它运算无影响。 digits对vpa的影响直到下一个digits出现。vpa(x,n)只对本指令起作用。 位数来改变精度。当有效位数增加时，计算时间和占用的内存也增加。 x可以是符号数、符号数表达式和符号数数组 MATLAB会尽量将有限精度近似的影响控制在最小范围内。采用默认精度直接产生的近似数被isAlways判断为严格等于精准数</p>
+<p>【例题】用三种运算方式表达式比较2/3的结果。 a1=2/3+pi %数值型 a=sym(2/3),b=sym(pi) a2=sym(a+b) %符号运算 a3=vpa(a2) %vpa型（默认32位） 〖说明〗 三种运算方式中数值型运算的速度最快。 有理数型符号运算的计算时间和占用内存是最大的，但结果非常准确。 vpa型的任意精度符号运算比较灵活，可以设置任意有效精度， 当保留的有效位数增加时，每次运算的时间和使用的内存也会增加。</p>
+<p>2.6.2 符号数字转换成双精度数字 MATLAB的某些指令，如integral等数值计算指令不接受符号类数字，只接受数值类数字，因此需进行数值类型转换。 Nd=double(Num_sym) 把符号数字Num_sym转换为双精度数字 〖说明〗 符号数字有时与双精度数字在外观上相似，可用class判别数据类型。 一般情况下，Nd是符号数字Num_sym双精度近似。 sym(HandNum)能把数字类数字转换成符号数字 double(‘Num’) 将字符串数字’Num’中的各个数字字符转换为字符的ASCII码数值组。</p>
+<p>2.6.3 不同类型数字的相互转换 MATLAB中主要有三种形式相似的数字类型： 双精度数字，符号数字，字符串数字</p>
+<p>2.7 符号微积分 2.7.1 序列/级数的符号求和 F=symsum(f,k) 求f(k)的不定和 F=symsum(f,k,[a,b]) 求确定和 F=symsum(f,k,a,b) B=symsum(A,dim,direction) 在维度沿方向计算数组的累（计）和 〖说明〗 f 是级数的通项表达式，可以是符号表达式、符号函数、符号数组、符号常数 f是数组时，对每个元素逐个求和，但自变量定义在整个数组上。 k取符号变量，缺省时，自变量由 symvar自动辨认； a、b可以是符号数值、符号表达式、符号函数、符号数组 b可取有限整数或inf。a、b同时缺省，默认自变量区间为 [0, k-1]
+dim是求和维度，1表示列维度（默认），2表示行维度 direction表示累计方向：forward（自上而下/自左而右）（默认） reverse（自下而上/自右而左）</p>
+<div class="line-block">
+<div class="line">【例2.7-1】 求</div>
+<div class="line">syms k t; f1=[t k^3]; f2=[1/(2*k-1)<sup>2,(-1)</sup>k/k];</div>
+<div class="line">s1=symsum(f1) % 求不定和，f1的自变量被确认为t s2=symsum(f2,1,inf) % 求确定和，f2的自变量被确认为k % 自变量和取值区间是对整个数组而言的</div>
+</div>
+<p>2.7.2 极限的符号计算 极限是微积分最基础的概念，求极限是微积分解析的基本方法。 limit(f) 对默认变量求趋于0的极限 limit(f,x,a) 求极限 limit(f,x,a,‘right’) 求极限 limit(f,x,a,‘left’) 求极限 〖说明〗 f可以是符号表达式、符号函数及由它们构成的数组 f为数组时，对元素逐个进行求极限，但自变量定义在整个矩阵上</p>
+<p>2.7.3 符号导数及级数展开 大学本科高等数学中的大多数微积分问题，都能用符号计算解决 df=diff(f,n) 求 df=diff(f,x1,…,xn) 求 f对x1,x2,…,xn的混合导数 df=jacobian(f,v) 多元向量函数的jacobian矩阵 st=taylor(f,var,a) 求var=a处的5阶泰勒级数 r=taylor(f,var,a,Name,Value) 求给定选项下f的泰勒级数 〖说明〗 f可以是符号表达式、符号函数及由它们构成的数组 f为数组时，求导和级数展开操作对元素逐个进行，但自变量定义在整个数组上。 n缺省时默认n=1 var缺省时，自变量由symvar自动确认；
+输入量a可以是（符号）数、符号变量、符号表达式，缺省默认a=0 Name/Value取值见表2.7-1</p>
+<p>【例2.7-a】两种重要极限和 syms t x k s=sin(k<em>t)/(k</em>t); % sinc函数 f=(1-1/x)^(k*x); Lsk=limit(s) % t趋于0 Ls1=limit(subs(s,k,1)) % 抽样函数sint/t的极限 Lf=limit(f,x,inf) % Lf1=vpa(subs(Lf,k,sym(‘-1’)),48) %给出48位精度的自然数</p>
+<p>【例2.7-b】 已知 求 syms a t x; f=[a,t^3;t*cos(x), log(x)]; % log(x)即求ln(x) df=diff(f) % 默认变量x（整个数组） dfdt2=diff(f,t,2) % 自由变量t（整个数组） dfdxdt=diff(diff(f,x),t) % 混合求导</p>
+<p>2.7.4 符号积分 F=int(f,var) 求f对变量var的不定积分（不带积分常数） F =int(f,var,[a,b]) 求f对变量var在区间[a,b]的定积分 F =int(f,var,[a,b],Name,Value) 求指定设置下的定积分 〖说明〗 f可以是符号表达式、符号函数及由它们构成的数组 f为数组时，对每个元素逐个求积分，但自变量定义在整个数组上。 var缺省时，自变量由 symvar(f,1)自动辨认 a、b允许取任何数值、Inf、- Inf、符号表达式或符号函数 Name/Value取值见表2.7-2 如果积分不可积，则给出错误提示并返回原函数 函数太复杂也可能给不出积分，可用数值积分</p>
+<div class="line-block">
+<div class="line">【例2.3-c】 求 。 clear</div>
+<div class="line">syms x f=sqrt((1+x)/x)/x s=int(f,x)</div>
+</div>
+<p>【例2.3-d】求积分。 syms x positive syms y z F2=int(int(int(x<sup>2+y</sup>2+z<sup>2,z,sqrt(xy),x^2y),y,sqrt(x),x</sup>2),x,1,2) VF2=vpa(F2) %积分结果用32位符号数字表示</p>
+<div class="line-block">
+<div class="line">2.8 符号变换及应用 Fourier变换，Laplace变换，Z变换，符号卷积 2.9 常微分方程的符号解法 2.9.1 符号解法和数值解法的互补作用 相比微分方程的数值解法，符号解法耗时多，可能得不到简单的解析解或封闭形式的解，甚至无法求解。 无论是初值问题还是边值问题，符号解法的指令形式相同且相当简单。 微分方程的符号解法和数值解法有很好的互补作用 2.9.2 常微分方程组ODEs概述 一般形式的微分方程组（ODEs）及附带条件 F(yn(t),…,y’(t) ,y(t),t)=0 yk-1(ak-1)=p, k=1,2,…,k&lt;n 2.9.3 求微分方程的符号解算命令 S=dsolve(eqs)
+求常微分方程（组）eqs的解 S=dsolve(eqs, cond) 求cond条件下eqs的解 S=dsolve(eqs, cond,Name,Value) 给定设置下求cond条件下eqs的解 [Y1,…,Yn]=dsolve(eqs, cond,Name,Value)</div>
+<div class="line">〖说明〗 输入量包括三部分：微分方程eq、初始条件或边界条件cond和指定的独立变量v。省略v，默认独立变量为小写字母t。 解一阶微分方程：①定义抽象函数，syms x(t)；②用x和diff(x,t)构建微分方程；③条件cond：x(0)；④求解。 解高阶微分方程：①定义抽象函数，syms x(t)；②定义各阶辅助导函数： Dx(t)=diff(x(t),t)，D2x(t)=diff(x(t),t,2)，D3x(t)=diff(x(t),t,3)</div>
+<div class="line">① 用x，Dx，D2x，D3x构建微分方程；④条件cond：x(0) = = a， Dx(0) = = b；D2x(0) = = c；⑤求解。 写微分方程时最好遵循“导数在前函数在后，导数降阶排序”的次序，否则可能出错。 Name/Value取值见表2.9-1 输出量S是符号数组或构架数组：单因变量微分方程组的解是符号数组 n个因变量微分方程组的解是构架S.name，域名是求解的因变量名，应变量的解存放在域中 既找不到显式解又找不到隐式解，则发布警告信息并置S为空符号对象</div>
+</div>
+<div class="line-block">
+<div class="line">2.9.4 微分方程符号解示例 【例2.9-1】求 的解 （1）一阶方程组求解步骤 clear all % &lt;1&gt; syms x(t) y(t) % &lt;2&gt; eq11=diff(x,t)-y; % &lt;3&gt; eq12=diff(y,t)==-x; % &lt;4&gt; cond=x(0)==sym(0.5); %只设了一个初始条件， S1=dsolve(eq11,eq12,cond) %解只有一个常数 C1</div>
+<div class="line">disp(’ ‘) disp(’微分方程组的解 S1’) disp([blanks(10),‘x(t)’,blanks(18),‘y(t)’]) disp([S1.x,S1.y])</div>
+</div>
+<div class="line-block">
+<div class="line">（2）尽量少用多输出量数组， [X31,Y31]=dsolve(eq11,eq12,cond) % &lt;12&gt;</div>
+<div class="line">[Y32,X32]=dsolve(eq11,eq12,‘x(0)=0.5’) % 输出排序出错 [Y33,X33]=dsolve(eq11,eq12,cond) % 输出排序出错</div>
+</div>
+<p>【例2.9-2】求解两点边值问题： （1）求边值问题 y=dsolve(‘x<em>D2y-3</em>Dy=x^2’,‘y(1)=0,y(5)=0’,‘x’)</p>
+<div class="line-block">
+<div class="line">（2）观察解的图形 xn=-1:6; yn=subs(y,‘x’,xn)</div>
+<div class="line">ezplot(y,[-1,6]) %符号计算绘图 hold on plot([1,5],[0,0],‘.r’,‘MarkerSize’,20) text(1,1,‘y(1)=0’) text(4,1,‘y(5)=0’) title([‘x<em>D2y - 3</em>Dy = x^2’,‘, y(1)=0,y(5)=0’]) plot(xn,yn,‘.r’,‘markersize’,20) %数值计算绘图 hold off</div>
+</div>
+<div class="line-block">
+<div class="line">2.10 符号矩阵分析和代数方程解</div>
+<div class="line">2.10.1 符号矩阵分析 符号矩阵和数值矩阵运算指令基本形式相同。 常用矩阵分析和解算指令见表2.10-1 colspace(A) 矩阵的列空间基 det(A) 矩阵行列式｜A｜ [V,D]=eig(A) 特征值分解，AV=VD inv(A) 逆矩阵A-1 rank(A) 矩阵秩 poly(A) 矩阵的特征多项式 s=svd(A) 符号矩阵的奇异值 [U,S,V] =svd(vpa(A)) 符号矩阵的奇异值分解 expm(A) 方阵A的指数函数阵eA [V,J]=jordan(A) 矩阵A的jordan分解，使AV=VJ</div>
+</div>
+<p>【例2.6-1】 （1） syms a11 a12 a21 a22 A=[a11,a12;a21,a22] DA=det(A) IA=inv(A)</p>
+<p>（2） EA=subexpr(eig(A),‘D’)</p>
+<p>2.10.2 线性方程组的符号解 求解线性方程组AX=B方法： 用矩阵除求解： X=A:nbsphinx-math:<cite>B</cite> 用命令求解：[X,r]=linsolve(A,B)</p>
+<div class="line-block">
+<div class="line">【例 2.6-3】求解线性方程组 →</div>
+<div class="line">（1）采用‘矩阵除’的线性方程解法 A=sym([1 1/2 1/2 -1;1 1 -1 1;1 -1/4 -1 1;-8 -1 1 1]); b=sym([0;10;0;1]); % 创建符号数组 X1=A:nbsphinx-math:<cite>b</cite> （2）采用solve 指令的一般代数方程解法 syms d n p q eq1=d+n/2+p/2-q; % &lt;4&gt; eq2=d+n-p+q-10; % eq3=d-n/4-p+q; % eq4=-8*d-n+p+q-1; % S=solve([eq1,eq2,eq3,eq4],[d,n,p,q]); % 输入量为数组 disp([’ d’,’ n’,’ p’,’ q’]) disp([S.d,S.n,S.p,S.q]) % &lt;10&gt;</div>
+</div>
+<p>2.10.3 各类等式/不等式方程的符号解 线性方程、非线性方程和超越方程等一般方程的求解指令： S=solve(eqn, var) 按默认方式求单个方程的解 S=solve(eqns, vars) eqns/vars输入量之间用（，）隔开 S=solve(eqn, var,Name,Value) 按给定方式求方程的解 S=vpasolve(eqn, var,init_guess, ‘random’,RV) 求有限精度的符号解 〖说明〗 eqn是符号方程（等式或不等式）、符号表达式或由它们构成的数组 输入量var可以是符号标量，也可以是多个符号变量构成的符号数组 var缺省时，被求解的n个变量由symvar(eqln,n)自动确认；
+输出量S是符号数组或构架数组：一元方程组的解是符号数组 n元方程组的解是构架S.name，域名是求解的变量名， 变量的解存放在域中，显示求解结果的援引方式：S.v1,S.v2,…,S.vn Name/Value取值见表2.10-2 得不到封闭型解析解时，如果不存在其它不确定参数，则给出数值解。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>【例2.6-4】求解方程组    关于y、z的解
 </pre></div>
 </div>
-<div class="input_area highlight-matlab notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span><span class="p">=</span><span class="mi">0</span><span class="p">:</span><span class="nb">pi</span><span class="o">/</span><span class="mi">100</span><span class="p">:</span><span class="mi">2</span><span class="o">*</span><span class="nb">pi</span><span class="p">;</span>
-<span class="n">y</span><span class="p">=</span><span class="nb">sin</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
-<span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-</pre></div>
+<p>syms u v w x y z S=solve(u<em>y^2+v</em>z+w==0,y+z+w==0,y,z) % &lt;1&gt; disp(‘S.y’),disp(S.y),disp(‘S.z’),disp(S.z) % &lt;2&gt;</p>
+<p>【例2.6-6】求解 clear all; syms x; s=solve(‘(x+2)^x=2’,x) % 无解析解时给出数值解。 xs=(s+2)^s % 验算 &lt;3&gt;</p>
+<p>2.11 符号函数的可视化 符号计算结果的可视化方法： 利用计算获得的符号表达式直接绘图 根据获得的符号表达式或符号数值结果，转换成数值数据，再利用数值绘图指令绘图 2.11.1 功能绘图命令汇集 MATLAB2016a版开始启用了新的绘图命令（表2.11-1），可接受符号表达式、 符号函数、符号隐函数及匿名或具名函数句柄和M文件函数</p>
+<p>2.11.2 线图绘制及修饰</p>
+<div class="line-block">
+<div class="line">fplot(f) 绘制平面曲线的简单格式 fp=fplot(f,[xmin,xmax],LineSpec,Name,Value)</div>
+<div class="line">fplot(xt,yt) 绘制x=x(t)和y=y(t)描写的平面曲线简单格式 fp=fplot(xt,yt,LineSpec,Name,Value)</div>
+<div class="line">plot3(xt.yt,zt) 绘制x(t),y(t),z(t)描写的三维空间曲线 fp=fplot3(xt.yt,zt,[tmin,tmax] ,LineSpec,Name,Value)</div>
 </div>
+<p>〖说明〗 输入函数可以是符号表达式、符号函数、符号参变量表达或函数句柄 f， xt，yt, zt；分别表达的含义是y=f(x)， x=x(t)，y=y(t), z=z(t) 这些输入量只有一个独立变量。 自变量[xmin,xmax] 和[tmin,tmax]缺省时均为[5,-5] 函数画图指令与数值画图指令已相互融合， LineSpec指定曲线的颜色、线型、样点形状等，表5.2-2, 表5.2-3, 表5.2-4 Name/Value曲线的粗细、标识点大小等，见表5.2-5 输出量fp保存所绘图形对象全部结构要素。 可对轴系要素（如线粗、坐标等）进行观察和修改（见第5章）
+如果希望通过编码对图形修改，就应生成输出量fp</p>
+<p>【例2.11-1】 绘制函数的图形 （1）符号表达式 clear,figure syms x f1=exp(-x)<em>sin(x); % &lt;3&gt; Lh1=fplot(f1,‘r:’,‘LineWidth’,8) % &lt;4&gt; （2）符号函数 f2(x)=exp(-x)</em>sin(x); % &lt;5&gt; hold on % &lt;6&gt; fplot(f2,‘b-’,‘LineWidth’,4) % &lt;7&gt; （3）参变量表达式 syms t u=t;v=exp(-t)*sin(t); % &lt;9&gt; fplot(u,v,‘y-’,‘LineWidth’,1) % &lt;10&gt; hold off % &lt;11&gt; （14）图形修改 legend(‘符号表达式 f1’,‘符号函数 f2(x)’,‘参数表达式 u，v’)% &lt;12&gt; title(‘输入f 可用三种不同形式编码’) % &lt;13&gt; xlabel(‘x’),ylabel(‘y’) % &lt;14&gt;</p>
+<p>2.11.3 面图绘制及修饰</p>
+<div class="line-block">
+<div class="line">fsurf(fxy) 绘制空间曲面的简单调用格式 fs=fsurf(fxy, [xmin,xmax,ymin,ymax],LineSpec,Name,Value)</div>
+<div class="line">fsurf(Xuv,Yuv,Zuv) 绘制参数方程表示的空间曲面的简单调用格式 fs= fsurf(Xuv,Yuv,Zuv,[umin,umax,vmin,vmax],LineSpec,Name,Value)</div>
+<div class="line">〖说明〗 n 输入量fxy，Xuv，Yuv，Zuv可以是符号函数、符号表达式、函数句柄、</div>
+<div class="line">分别表达的含义是z=f(x,y)，Xuv =x(s,t)，Yuv =y(s,t)，Zuv =z(s,t) 这些输入量有两个独立变量 n 输入量[xmin,xmax, ymin,ymax]和[umin,umax,vmin,vmax]默认值均为[5,-5] n 函数画图指令与数值画图指令已相互融合， LineSpec指定曲线的颜色、线型、样点形状等，表5.2-2, 表5.2-3, 表5.2-4 Name/Value曲线的粗细、标识点大小等，见表5.2-5 n 输出量fs保存所绘图形对象全部结构要素。 可对轴系要素（如线粗、坐标等）进行观察和修改（见第5章） 如果希望通过编码对图形修改，就应生成输出量fs 其它三维绘图指令使用方法与fsurf类似。</div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
+<p>【例2.11-2】 clear syms s t x=cos(s)<em>cos(t); % y=cos(s)</em>sin(t); % z(s,t)=sin(s); %</p>
+<div class="line-block">
+<div class="line">subplot(1,2,1) sh=fsurf(x,y,z,[0,pi/2,0,3*pi/2]) %矩形域 shading interp colormap(spring) % light(‘position’,[0,0,-10],‘style’,‘local’) %</div>
+<div class="line">light(‘position’,[-1,-0.5,2],‘style’,‘local’) material([0.5,0.5,0.5,10,0.3])</div>
 </div>
-<div class="output_area docutils container">
-<img alt="_images/未命名_1_0.png" src="_images/未命名_1_0.png" />
+<div class="line-block">
+<div class="line">subplot(1,2,2) sh1=fsurf(x,y,z,[0,pi/2,0,3*pi/2,‘circ’]) %圆形域 view(17,40) % shading interp colormap(spring) % light(‘position’,[0,0,-10],‘style’,‘local’) %</div>
+<div class="line">light(‘position’,[-1,-0.5,2],‘style’,‘local’) material([0.5,0.5,0.5,10,0.3])</div>
 </div>
+<p>sh.EdgeColor=‘1,0,1’ %使得经纬线消失，也可改变其颜色 sh1.EdgeColor=‘none’ clear syms s t x=cos(s)<em>cos(t); % y=cos(s)</em>sin(t); % z(s,t)=sin(s); %</p>
+<div class="line-block">
+<div class="line">subplot(1,2,1) sh=fsurf(x,y,z,[0,pi/2,0,3*pi/2]) %矩形域 shading interp colormap(spring) % light(‘position’,[0,0,-10],‘style’,‘local’) %</div>
+<div class="line">light(‘position’,[-1,-0.5,2],‘style’,‘local’) material([0.5,0.5,0.5,10,0.3])</div>
 </div>
-<p>添加坐标轴标注和标题。函数<strong>xlabel</strong>中的字符**:nbsphinx-math:<cite>pi*</cite>*创建符号<strong>Π</strong>，<strong>title</strong>函数中的<strong>FontSize</strong>属性可调整标题文本的字号。</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
-</pre></div>
+<div class="line-block">
+<div class="line">subplot(1,2,2) sh1=fsurf(x,y,z,[0,pi/2,0,3*pi/2,‘circ’]) %圆形域 view(17,40) % shading interp colormap(spring) % light(‘position’,[0,0,-10],‘style’,‘local’) %</div>
+<div class="line">light(‘position’,[-1,-0.5,2],‘style’,‘local’) material([0.5,0.5,0.5,10,0.3])</div>
 </div>
-<div class="input_area highlight-matlab notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span><span class="p">=</span><span class="mi">0</span><span class="p">:</span><span class="nb">pi</span><span class="o">/</span><span class="mi">100</span><span class="p">:</span><span class="mi">2</span><span class="o">*</span><span class="nb">pi</span><span class="p">;</span>
-<span class="n">y</span><span class="p">=</span><span class="nb">sin</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
-<span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-<span class="n">xlabel</span><span class="p">(</span><span class="s">&#39;x=0:2\pi&#39;</span><span class="p">)</span>
-<span class="n">ylabel</span><span class="p">(</span><span class="s">&#39;Sine of x&#39;</span><span class="p">)</span>
-<span class="n">title</span><span class="p">(</span><span class="s">&#39;Plot of the Sine Function&#39;</span><span class="p">,</span><span class="s">&#39;FontSize&#39;</span><span class="p">,</span><span class="mi">12</span><span class="p">)</span>
-</pre></div>
+<p>sh.EdgeColor=‘1,0,1’ %使得经纬线消失，也可改变其颜色 sh1.EdgeColor=‘none’</p>
+<p>clf ezsurf(x,y,z,[0,pi/2,0,3*pi/2,‘circ’])</p>
+<p>2.11.4 符号数学和可视化应用 先将符号计算结果数值化，再用数值绘图指令实现可视化。 【例2.8-3】求函数的积分，用plot指令绘制函数及其积分函数的曲线。对反函数积分的两种算法进行可视化比较。 （1）求函数积分 clear syms x y real % fx=1-2/(1+exp(x)); % disp(‘f(x)=’) pretty(fx) disp(’ ‘) fxint=int(fx,x,0,x) % （2）用数值绘图指令plot画图 xk=0:0.1:2; % fxk=subs(fx,x,xk); % fxintk=subs(fxint,x,xk); % plot(xk,fxk,’g:’,xk,fxintk,‘r’,‘LineWidth’,2.5)% title(‘函数及其积分函数’) xlabel(‘x’)
+legend(‘f(x)’,‘:nbsphinx-math:<a href="#id3"><span class="problematic" id="id4">`</span></a>int`^x_0 f(x) dx’,‘Location’,‘best’)</p>
+<p>（3）求反函数及返积分 gy=simplify(subs(finverse(fx),x,y)) % 求反函数 gyint=simplify(int(gy,y,0,y)) %</p>
+<div class="line-block">
+<div class="line">（4）验证函数与反函数的互反性 gf=simplify(subs(gy,y,fx)) %</div>
+<div class="line">（5）验证函数积分与反函数积分关于“自变量与函数值所围条形面积”的互补性 yk=subs(fx,x,xk); % gyintk=subs(gyint,y,yk); %</div>
+<div class="line">GYintk=xk.*fxk-fxintk; % plot(yk,gyintk,‘r’) hold on plot(yk,GYintk,‘+k’) hold off xlabel(‘y’) legend(‘直接法计算反函数积分’, ‘互补法求反函数积分’,‘location’,‘best’)</div>
 </div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="_images/未命名_3_0.png" src="_images/未命名_3_0.png" />
-</div>
-</div>
-</div>
-<div class="section" id="在一个图形中绘制多条曲线">
-<h3>在一个图形中绘制多条曲线<a class="headerlink" href="#在一个图形中绘制多条曲线" title="永久链接至标题">¶</a></h3>
-<p>通过调用一次<strong>plot</strong>函数，<strong>MATLAB</strong>根据多对x-y数据绘制出多条颜色不同的曲线。</p>
-<p>例如，这些语句绘制出三个与<strong>x</strong>相关的函数：</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
-</pre></div>
-</div>
-<div class="input_area highlight-matlab notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span><span class="p">=</span><span class="mi">0</span><span class="p">:</span><span class="nb">pi</span><span class="o">/</span><span class="mi">100</span><span class="p">:</span><span class="mi">2</span><span class="o">*</span><span class="nb">pi</span><span class="p">;</span>
-<span class="n">y</span><span class="p">=</span><span class="nb">sin</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
-<span class="n">y2</span><span class="p">=</span><span class="nb">sin</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="p">.</span><span class="mi">25</span><span class="p">);</span>
-<span class="n">y3</span><span class="p">=</span><span class="nb">sin</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="p">.</span><span class="mi">5</span><span class="p">);</span>
-<span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y2</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y3</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="_images/未命名_5_0.png" src="_images/未命名_5_0.png" />
-</div>
-</div>
-<p>函数<strong>legend</strong>提供了一种简便易行的方法来标注各条曲线：</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
-</pre></div>
-</div>
-<div class="input_area highlight-matlab notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span><span class="p">=</span><span class="mi">0</span><span class="p">:</span><span class="nb">pi</span><span class="o">/</span><span class="mi">100</span><span class="p">:</span><span class="mi">2</span><span class="o">*</span><span class="nb">pi</span><span class="p">;</span>
-<span class="n">y</span><span class="p">=</span><span class="nb">sin</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
-<span class="n">y2</span><span class="p">=</span><span class="nb">sin</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="p">.</span><span class="mi">25</span><span class="p">);</span>
-<span class="n">y3</span><span class="p">=</span><span class="nb">sin</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="p">.</span><span class="mi">5</span><span class="p">);</span>
-<span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y2</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y3</span><span class="p">)</span>
-
-<span class="n">legend</span><span class="p">(</span><span class="s">&#39;sin(x)&#39;</span><span class="p">,</span><span class="s">&#39;sin(x-.25)&#39;</span><span class="p">,</span><span class="s">&#39;sin(x-.5)&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="_images/未命名_7_0.png" src="_images/未命名_7_0.png" />
-</div>
-</div>
-</div>
-<div class="section" id="指定线条样式和颜色">
-<h3>指定线条样式和颜色<a class="headerlink" href="#指定线条样式和颜色" title="永久链接至标题">¶</a></h3>
-<p>使用<strong>plot</strong>命令绘制数据时,可以指定线条颜色、样式和添加标记(如加号或圆圈)：</p>
-<p><code class="docutils literal notranslate"><span class="pre">plot(x,y,'color_style_marker')</span></code></p>
-<p><strong>color_style_marker</strong>包含一到四个字符(通过单引号隔开),由颜色、线条样式和标记类型构成。例如,</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
-</pre></div>
-</div>
-<div class="input_area highlight-matlab notranslate"><div class="highlight"><pre>
-<span></span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="s">&#39;r:+&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="_images/未命名_11_0.png" src="_images/未命名_11_0.png" />
-</div>
-</div>
-<p>使用红线绘制数据,并在每个数据点放置符号“<strong>+</strong>” 标记。</p>
-<p><strong>color_style_marker</strong>由以下部分组成。</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 3%" />
-<col style="width: 48%" />
-<col style="width: 48%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>类型</p></th>
-<th class="head"><p>符号</p></th>
-<th class="head"><p>说明</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>颜色</p></td>
-<td><p><strong>‘c’</strong><strong>‘m’</strong><strong>‘y’</strong><strong>‘r’</strong><strong>‘g’</strong><strong>‘b’</strong><strong>‘w’</strong><strong>‘k’</strong></p></td>
-<td><p>青蓝色品红色黄色红色绿色蓝色白色黑色</p></td>
-</tr>
-<tr class="row-odd"><td><p>线型</p></td>
-<td><p><strong>‘-’</strong><strong>’–’</strong><strong>‘:’</strong><strong>‘-.’</strong><strong>‘no character’</strong></p></td>
-<td><p>实线虚线点线点画线无</p></td>
-</tr>
-<tr class="row-even"><td><p>标记</p></td>
-<td><p><strong>’+‘**</strong>’o’<strong>**’*‘**</strong>’x’<a href="#id6"><span class="problematic" id="id7">**</span></a><strong>’s’**</strong>’d’<a href="#id8"><span class="problematic" id="id9">**</span></a><strong>’^‘**</strong>’v’<a href="#id10"><span class="problematic" id="id11">**</span></a><strong>’&gt;‘**</strong>’&lt;‘<a href="#id12"><span class="problematic" id="id13">**</span></a><strong>’p’**</strong>‘h’<a href="#id14"><span class="problematic" id="id15">**</span></a><a href="#id16"><span class="problematic" id="id17">**</span></a>no character**</p></td>
-<td><p>加号圆圈星号叉号方形菱形上三角下三角右三角左三角五角形六角形无</p></td>
-</tr>
-</tbody>
-</table>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
-</pre></div>
-</div>
-<div class="input_area highlight-matlab notranslate"><div class="highlight"><pre>
-<span></span>
-</pre></div>
-</div>
-</div>
+<p>2.11.5 可视化与数据探索 【例2.8-4】 （1） TL1=evalin(symengine,‘mtaylor(sin(x^2+y),[x,y],8)’)% (2) Fxy=sym(‘sin(x^2+y)’) Fxy_TL1=Fxy-TL1 % （3） figure(1) % ezsurf(Fxy,[-2,2,-3,3]) % shading interp % view([-63,52]) % colormap(spring) light,light(‘position’,[-10,4,50],‘e’,‘local’,‘color’,‘r’)</p>
+<div class="line-block">
+<div class="line">（4） figure(2) ezsurf(TL1,[-2,2,-3,3]) shading interp view([-43,54]) colormap(spring) light light(‘position’,[-10,2,2],‘style’,‘local’,‘color’,[0.8,0.3,0.3]) light(‘position’,[-2,-10,2],‘style’,‘local’,‘color’,[0.4,0.5,0.7]) （5） figure(3) ezsurf(Fxy,[-0.5,0.5,-0.5,0.5],‘circ’) % axis([-1,1,-1,1,-2,2]) shading interp colormap(spring) view([-49,17]) light light(‘position’,[-30,0,-2],‘style’,‘local’,‘color’,‘r’)</div>
+<div class="line">（6） figure(4) ezsurf(Fxy_TL1,[-0.5,0.5],‘circ’) shading interp colormap(spring) view([-53,34]) light light(‘position’,[-10,15,0],‘style’,‘local’,‘color’,[0.8,0.3,0.3])</div>
 </div>
 </div>
 </div>

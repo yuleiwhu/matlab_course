@@ -41,9 +41,8 @@ MATLAB的特点
    :numbered: 3
    :caption: 课程内容
 
-   intro_matlab 
-   
-   
+   intro_matlab
+   ch2
 
 
 .. toctree::
@@ -51,6 +50,7 @@ MATLAB的特点
    :caption: 课后作业
 
    homework/c1
+   homework/c2
 
 
 
