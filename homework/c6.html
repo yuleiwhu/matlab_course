@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>第六章课后习题 &mdash; Matlab课程  文档</title>
+  <title>2. M文件 &mdash; Matlab课程  文档</title>
   
 
   
@@ -40,7 +40,8 @@
   <link rel="stylesheet" href="../_static/proof.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="prev" title="第五章课后习题" href="c5.html" /> 
+    <link rel="next" title="3. 数据和函数的可视化" href="c5.html" />
+    <link rel="prev" title="1. 基础准备及入门" href="c1.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -86,12 +87,12 @@
             
               <p class="caption"><span class="caption-text">课后作业</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="c1.html">第一章课后习题</a></li>
-<li class="toctree-l1"><a class="reference internal" href="c2.html">第二章课后习题</a></li>
-<li class="toctree-l1"><a class="reference internal" href="c3.html">第三章课后习题</a></li>
-<li class="toctree-l1"><a class="reference internal" href="c4.html">第四章课后习题</a></li>
-<li class="toctree-l1"><a class="reference internal" href="c5.html">第五章课后习题</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">第六章课后习题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c1.html">1. 基础准备及入门</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. M文件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c5.html">3. 数据和函数的可视化</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c2.html">4. 符号计算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c3.html">5. 数值数组及向量化运算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c4.html">6. 数值计算</a></li>
 </ul>
 
             
@@ -137,7 +138,7 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>第六章课后习题</li>
+      <li>2. M文件</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -180,8 +181,8 @@
     text-align: unset;
 }
 </style>
-<div class="section" id="id1">
-<h1>第六章课后习题<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="section" id="m">
+<h1>2. M文件<a class="headerlink" href="#m" title="永久链接至标题">¶</a></h1>
 <p>1	请分别写出用<code class="docutils literal notranslate"><span class="pre">for</span></code> 和<code class="docutils literal notranslate"><span class="pre">while</span></code> 循环语句计算$K=\sum_{i=0}^{10000000}0.2^i=1+0.2+0.2^2+\dots + 0.2^{10000000}$的程序。此外，还请写出避免循环的数值、符号计算程序。（提示：<code class="docutils literal notranslate"><span class="pre">sum</span></code>和“指数采用数组”配合； <code class="docutils literal notranslate"><span class="pre">tic</span></code>, <code class="docutils literal notranslate"><span class="pre">toc</span></code>可用以记录计算所花的时间。）</p>
 <p>2	在指定阈值$\tau$ 的情况下，求$S=\sum_{n=1}^NR_n$。其中通项$R_n=\frac{1}{\sum_{k=1}^nk}$，而$N$是使通项$R_n&lt;\tau$满足的最小正整数$n$，即$N=\arg\min_{\forall n\in \mathbb{Z}^+}{R_n\leq \epsilon}$。本题要求：先请编写一个M函数文件，且该函数的输入量为阈值$\tau$，输出量是满足要求$R_n&lt;\tau$的最小正整数$N$及这$N$个通项和$S$。然后，在$\tau=1e-5$时，利用你所编写的M函数算出相应的$N$值、$S$值。（利用提示： 构成<code class="docutils literal notranslate"><span class="pre">while</span></code>环。）</p>
 <p>3	编写一个函数M文件，它的功能：没有输入量时，画出单位圆（见图p6-1）；输入量是大于2的自然数N时，绘制正N边形，图名应反映显示多边形的真实边数（见图p6-2）；输入量是“非自然数”时，给出“出错提示”。此外，函数M文件应有H1行、帮助说明和程序编写人姓名。（提示：<code class="docutils literal notranslate"><span class="pre">nargin</span></code>, <code class="docutils literal notranslate"><span class="pre">error</span></code>, <code class="docutils literal notranslate"><span class="pre">int2str</span></code>）</p>
@@ -198,8 +199,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="c5.html" class="btn btn-neutral float-right" title="3. 数据和函数的可视化" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="c5.html" class="btn btn-neutral float-left" title="第五章课后习题" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="c1.html" class="btn btn-neutral float-left" title="1. 基础准备及入门" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

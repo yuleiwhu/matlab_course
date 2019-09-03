@@ -4,7 +4,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "# 第一章课后习题"
+    "# 1. 基础准备及入门"
    ]
   },
   {
