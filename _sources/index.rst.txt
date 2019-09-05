@@ -3,14 +3,14 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-欢迎进入《Matlab基础及应用》课程网页！
+欢迎进入《Matlab及应用》课程网页！
 ======================================
 
-:课程名称: Matlab 基础及应用
+:课程名称: Matlab及应用
 :授课老师: 余磊~副教授，(ly.wd@whu.edu.cn)
 :课程时间: 1-10周，周一，11-12节
 :课程地点: 1区3-303
-:教材: 《MATLAB教程》R2018a，张志涌，杨祖樱.  北京航空航天大学出版社，2015 
+:教材: 《MATLAB教程》R2018a，张志涌，杨祖樱.  北京航空航天大学出版社，2019 
 :课程安排及课件: 
 
 1. **基础准备及入门（1）** 1_, 1.1_, 1.2_, 
