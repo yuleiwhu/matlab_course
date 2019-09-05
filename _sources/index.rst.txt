@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-欢迎进入《Matlab及应用》课程网页！
+欢迎进入《Matlab及其应用》课程网页！
 ======================================
 
-:课程名称: Matlab及应用
+:课程名称: Matlab及其应用
 :授课老师: 余磊~副教授，(ly.wd@whu.edu.cn)
 :课程时间: 1-10周，周一，11-12节
 :课程地点: 1区3-303
@@ -73,16 +73,17 @@
 .. _1: courses/ch1/Ch1.mlx
 .. _1.1: courses/ch1/Ch1_1.mlx
 .. _1.2: courses/ch1/Ch1_2.mlx
+.. 每个章节的课程如有更改重新上传，只需要去掉前面两个点。
 .. _1.3: courses/ch1/Ch1_3.mlx
 .. _1.4-5: courses/ch1/Ch1_4_5.mlx
 .. _1.6-7: courses/ch1/Ch1_6_7.mlx
-.. _2: courses/ch2/Ch2.mlx
-.. _3.1-2: courses/ch3/Ch3_1-2.mlx
-.. _3.3-5: courses/ch3/Ch3_3-5.mlx
-.. _4: courses/ch4/ch4.mlx
-.. _5.1: courses/ch5/ch5_1.mlx
-.. _5.2: courses/ch5/ch5_2.mlx
-.. _6: courses/ch6/ch6.mlx
+.. .. _2: courses/ch2/Ch2.mlx
+.. .. _3.1-2: courses/ch3/Ch3_1-2.mlx
+.. .. _3.3-5: courses/ch3/Ch3_3-5.mlx
+.. .. _4: courses/ch4/ch4.mlx
+.. .. _5.1: courses/ch5/ch5_1.mlx
+.. .. _5.2: courses/ch5/ch5_2.mlx
+.. .. _6: courses/ch6/ch6.mlx
 
 
 :课程目的:
