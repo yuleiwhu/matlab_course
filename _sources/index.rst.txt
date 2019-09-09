@@ -160,6 +160,7 @@ MATLAB从入门到精通（第2版），  胡晓冬 等，人民邮电出版社�
    :maxdepth: 2
    :caption: 课后作业
 
+   homework/c0 
    homework/c1
    homework/c6
    homework/c5

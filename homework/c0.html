@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>2. M文件 &mdash; Matlab课程  文档</title>
+  <title>作业要求 &mdash; Matlab课程  文档</title>
   
 
   
@@ -40,8 +40,8 @@
   <link rel="stylesheet" href="../_static/proof.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="3. 数据和函数的可视化" href="c5.html" />
-    <link rel="prev" title="1. 基础准备及入门" href="c1.html" /> 
+    <link rel="next" title="1. 基础准备及入门" href="c1.html" />
+    <link rel="prev" title="欢迎进入《Matlab及其应用》课程网页！" href="../index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -87,9 +87,9 @@
             
               <p class="caption"><span class="caption-text">课后作业</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="c0.html">作业要求</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">作业要求</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c1.html">1. 基础准备及入门</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">2. M文件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c6.html">2. M文件</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c5.html">3. 数据和函数的可视化</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c2.html">4. 符号计算</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c3.html">5. 数值数组及向量化运算</a></li>
@@ -139,13 +139,13 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>2. M文件</li>
+      <li>作业要求</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/homework/c6.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/homework/c0.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -182,14 +182,18 @@
     text-align: unset;
 }
 </style>
-<div class="section" id="m">
-<h1>2. M文件<a class="headerlink" href="#m" title="永久链接至标题">¶</a></h1>
-<p>1	请分别写出用<code class="docutils literal notranslate"><span class="pre">for</span></code> 和<code class="docutils literal notranslate"><span class="pre">while</span></code> 循环语句计算$K=\sum_{i=0}^{10000000}0.2^i=1+0.2+0.2^2+\dots + 0.2^{10000000}$的程序。此外，还请写出避免循环的数值、符号计算程序。（提示：<code class="docutils literal notranslate"><span class="pre">sum</span></code>和“指数采用数组”配合； <code class="docutils literal notranslate"><span class="pre">tic</span></code>, <code class="docutils literal notranslate"><span class="pre">toc</span></code>可用以记录计算所花的时间。）</p>
-<p>2	在指定阈值$\tau$ 的情况下，求$S=\sum_{n=1}^NR_n$。其中通项$R_n=\frac{1}{\sum_{k=1}^nk}$，而$N$是使通项$R_n&lt;\tau$满足的最小正整数$n$，即$N=\arg\min_{\forall n\in \mathbb{Z}^+}{R_n\leq \epsilon}$。本题要求：先请编写一个M函数文件，且该函数的输入量为阈值$\tau$，输出量是满足要求$R_n&lt;\tau$的最小正整数$N$及这$N$个通项和$S$。然后，在$\tau=1e-5$时，利用你所编写的M函数算出相应的$N$值、$S$值。（利用提示： 构成<code class="docutils literal notranslate"><span class="pre">while</span></code>环。）</p>
-<p>3	编写一个函数M文件，它的功能：没有输入量时，画出单位圆（见图p6-1）；输入量是大于2的自然数N时，绘制正N边形，图名应反映显示多边形的真实边数（见图p6-2）；输入量是“非自然数”时，给出“出错提示”。此外，函数M文件应有H1行、帮助说明和程序编写人姓名。（提示：<code class="docutils literal notranslate"><span class="pre">nargin</span></code>, <code class="docutils literal notranslate"><span class="pre">error</span></code>, <code class="docutils literal notranslate"><span class="pre">int2str</span></code>）</p>
-<p><img alt="../_images/2019-09-02-16-10-33.png" src="../_images/2019-09-02-16-10-33.png" /></p>
-<p><img alt="../_images/2019-09-02-16-10-41.png" src="../_images/2019-09-02-16-10-41.png" /></p>
-<p>4	使用泛函指令<code class="docutils literal notranslate"><span class="pre">fminbnd</span></code>寻找$y(x)=-e^{-x}|\sin[\cos x]|$在$x=0$附近的极小值，并绘制出该函数在$[-2, 2]$间的图形加以验证。本题要求：<code class="docutils literal notranslate"><span class="pre">fminbnd</span></code>的第一个输入量使用匿名函数表达。（提示：注意搜索范围的选择；假如极值在边界附近，进一步扩大搜索范围是合理的选择。）</p>
+<div class="section" id="id1">
+<h1>作业要求<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>本课程所有章节的作业均包括两个部分：1. 理论；2. 实验操作。</p>
+<p>理论部分，建议同学们利用Typora工具完成后，生成PDF或者直接上传markdown文件；实验操作部分，也可以在Typora中插入代码，并且将实验结果贴在文件中。<strong>不建议使用Word排版</strong>。</p>
+<ul class="simple">
+<li><p>Typora网址：<a class="reference external" href="https://typora.io">https://typora.io</a></p></li>
+<li><p>相关介绍：<a class="reference external" href="https://zhuanlan.zhihu.com/p/44998516">https://zhuanlan.zhihu.com/p/44998516</a></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>一定注意不准抄袭，一经发现，本次作业自动评为0分。</p>
+</div>
 </div>
 
 
@@ -200,10 +204,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="c5.html" class="btn btn-neutral float-right" title="3. 数据和函数的可视化" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="c1.html" class="btn btn-neutral float-right" title="1. 基础准备及入门" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="c1.html" class="btn btn-neutral float-left" title="1. 基础准备及入门" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../index.html" class="btn btn-neutral float-left" title="欢迎进入《Matlab及其应用》课程网页！" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
