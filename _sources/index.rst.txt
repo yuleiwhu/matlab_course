@@ -89,9 +89,9 @@
 .. .. _3.1-2: courses/ch3/Ch3_1-2.mlx
 .. .. _3.3-5: courses/ch3/Ch3_3-5.mlx
 .. .. _4: courses/ch4/ch4.mlx
-.. .. _5.1: courses/ch5/ch5_1.mlx
-.. .. _5.2: courses/ch5/ch5_2.mlx
 
+.. _5.1: courses/ch5/ch5_1.mlx
+.. _5.2: courses/ch5/ch5_2.mlx
 .. _6: courses/ch6/ch6.mlx
 
 
