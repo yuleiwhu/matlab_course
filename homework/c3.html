@@ -222,7 +222,7 @@
 <p>（1）请问矩阵Z中有多少个“非数”数据？</p>
 <p>（2）用指令<code class="docutils literal notranslate"><span class="pre">surf(X,Y,Z);</span></code> <code class="docutils literal notranslate"><span class="pre">shading</span> <span class="pre">interp</span></code>观察所绘的图形。</p>
 <p>（3）请写出绘制相应的“无裂缝”图形的全部指令。（提示：<code class="docutils literal notranslate"><span class="pre">isnan</span></code>用于判断是否非数；可借助<code class="docutils literal notranslate"><span class="pre">sum</span></code>求和；<code class="docutils literal notranslate"><span class="pre">realmin</span></code>是最小正数。）</p>
-<p>8．   请分别用“标量循环+条件分支”法和“数组混合运算”法，在、的矩形域内计算以下二元函数。然后，比较两个计算结果中元素的最大相对误差，并使用surf指令绘制函数图形。（提示：数组运算时所需的矩形域内的自变量数组X、Y可使用meshgrid生成。）</p>
+<p>8．   请分别用“标量循环+条件分支”法和“数组混合运算”法，在$-1.5\leq x \leq 1.5$、$-3\leq y \leq 3$的矩形域内计算以下二元函数。然后，比较两个计算结果中元素的最大相对误差，并使用surf指令绘制函数图形。（提示：数组运算时所需的矩形域内的自变量数组X、Y可使用meshgrid生成。）</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}z(x,y)= \begin{cases}
 0.546 e^{-0.75 y^2-3.75x^2+1.5x} &amp; x+y \leq -1 \\
