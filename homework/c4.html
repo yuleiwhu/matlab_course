@@ -183,11 +183,11 @@
 </style>
 <div class="section" id="id1">
 <h1>6. 数值计算<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
-<p>1．	采用数值计算方法，画出$y(x)=\int_0^x\frac{\sin t}{t}dt$ 在 区间曲线，并计算$y(4.5)$。（提示：<code class="docutils literal notranslate"><span class="pre">cumtrapz</span></code>快捷，在精度要求不高处可用；<code class="docutils literal notranslate"><span class="pre">integral</span></code>也可试。巧用<code class="docutils literal notranslate"><span class="pre">find</span></code>。）</p>
+<p>1．	采用数值计算方法，画出$y(x)=\int_0^x\frac{\sin t}{t}dt$ 在$[0,10]$ 区间曲线，并计算$y(4.5)$。（提示：<code class="docutils literal notranslate"><span class="pre">cumtrapz</span></code>快捷，在精度要求不高处可用；<code class="docutils literal notranslate"><span class="pre">integral</span></code>也可试。巧用<code class="docutils literal notranslate"><span class="pre">find</span></code>。）</p>
 <p>2．	求函数$f(x)=e^{\sin^3 x}$的数值积分$s=\int_0^\pi f(x) dx$，并请采用符号计算尝试复算。（提示：各种数值法均可试。）</p>
 <p>3．	用integral求取$\int_{-5\pi}^{+\infty}e^{-|x|} |\sin x| dx$的绝对精度为$10^{-9}$的广义积分，并尝试用 <code class="docutils literal notranslate"><span class="pre">trapz</span></code>及符号计算此积分。（提示：注意<code class="docutils literal notranslate"><span class="pre">integral</span></code>指令相对误差控制对绝对精度的影响。）</p>
 <p>4．	求函数$f(t)=(\sin 5t)^2e^{0.06 t^2}-1.5 t \cos 2t + 1.8|t+0.5|$在区间$[-5,5]$中的最小值点。（提示：作图观察。）</p>
-<p>5．	设$\frac{d^2 y(t)}{dt^2}-3\frac{dy(t)}{dt}+2y(t)=1$, $y(0)=1,\frac{dy(0)}{dt}=0$，用数值法和符号法求 。（提示：注意<code class="docutils literal notranslate"><span class="pre">ode45</span></code>和 <code class="docutils literal notranslate"><span class="pre">dsolve</span></code>的用法。）</p>
+<p>5．	设$\frac{d^2 y(t)}{dt^2}-3\frac{dy(t)}{dt}+2y(t)=1$, $y(0)=1,\frac{dy(0)}{dt}=0$，用数值法和符号法求 $y(t)|_{t=0.5}$。（提示：注意<code class="docutils literal notranslate"><span class="pre">ode45</span></code>和 <code class="docutils literal notranslate"><span class="pre">dsolve</span></code>的用法。）</p>
 <p>6．	求$-0.5+t-10e^{-0.2t}|\sin \sin t|=0$的实数解。（提示：发挥作图法功用）</p>
 <p>7．	求解二元函数方程组$\begin{cases}
 \sin(x-y)&amp;=0 \\
